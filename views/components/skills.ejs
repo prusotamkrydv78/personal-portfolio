@@ -1,295 +1,672 @@
 <section id="skills" class="relative py-24 overflow-hidden">
-  <!-- Background Elements -->
+  <!-- Futuristic Background Elements -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute left-0 top-0 w-1/3 h-1/3 bg-gradient-radial from-primary/5 to-transparent"></div>
-    <div class="absolute right-0 bottom-0 w-1/3 h-1/3 bg-gradient-radial from-secondary/5 to-transparent"></div>
-    
-    <!-- Decorative Elements -->
-    <div class="absolute inset-0 flex flex-wrap gap-8 justify-center items-center opacity-[0.02]">
-      <div class="w-20 h-20 border border-gray-500 rounded-full"></div>
-      <div class="w-16 h-16 border border-gray-500 rounded-md rotate-45"></div>
-      <div class="w-24 h-24 border border-gray-500 rounded-full"></div>
-      <div class="w-12 h-12 border border-gray-500 rounded-md rotate-12"></div>
-      <div class="w-20 h-20 border border-gray-500 rounded-full"></div>
-      <div class="w-16 h-16 border border-gray-500 rounded-md rotate-45"></div>
-      <div class="w-24 h-24 border border-gray-500 rounded-full"></div>
-      <div class="w-12 h-12 border border-gray-500 rounded-md rotate-12"></div>
+    <!-- Dynamic Gradient Background -->
+    <div class="absolute inset-0 skill-bg-gradient"></div>
+
+    <!-- Neural Network Grid -->
+    <div class="absolute inset-0 neural-grid">
+      <div class="neural-grid-horizontal"></div>
+      <div class="neural-grid-vertical"></div>
+      <div class="neural-grid-nodes"></div>
+    </div>
+
+    <!-- Floating Tech Particles -->
+    <div class="absolute inset-0 tech-particles" id="tech-particles"></div>
+
+    <!-- Data Flow Lines -->
+    <div class="absolute inset-0 data-flow">
+      <div class="data-flow-line" style="--delay: 0s; --top: 20%; --speed: 15s;"></div>
+      <div class="data-flow-line" style="--delay: 2s; --top: 40%; --speed: 12s;"></div>
+      <div class="data-flow-line" style="--delay: 1s; --top: 60%; --speed: 18s;"></div>
+      <div class="data-flow-line" style="--delay: 3s; --top: 80%; --speed: 10s;"></div>
+    </div>
+
+    <!-- Futuristic Decorative Elements -->
+    <div class="hidden lg:block absolute right-10 top-20">
+      <div class="tech-orb">
+        <div class="tech-orb-rings">
+          <div class="tech-orb-ring"></div>
+          <div class="tech-orb-ring" style="animation-delay: 0.5s"></div>
+          <div class="tech-orb-ring" style="animation-delay: 1s"></div>
+        </div>
+        <div class="tech-orb-core"></div>
+      </div>
+    </div>
+
+    <div class="hidden lg:block absolute left-10 bottom-20">
+      <div class="tech-cube">
+        <div class="tech-cube-face tech-cube-front"></div>
+        <div class="tech-cube-face tech-cube-back"></div>
+        <div class="tech-cube-face tech-cube-top"></div>
+        <div class="tech-cube-face tech-cube-bottom"></div>
+        <div class="tech-cube-face tech-cube-left"></div>
+        <div class="tech-cube-face tech-cube-right"></div>
+      </div>
     </div>
   </div>
-  
+
   <div class="container mx-auto px-6 relative z-10">
-    <!-- Section Title with Highlight -->
+    <!-- Futuristic Section Title -->
     <div class="text-center mb-16">
-      <span class="inline-block text-primary text-sm font-semibold tracking-wider uppercase mb-2 reveal">My Skills</span>
-      <h2 class="section-title text-4xl md:text-5xl font-bold font-display mb-4 inline-block relative reveal">
-        Technical <span class="gradient-text">Expertise</span>
-        <span class="highlight absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></span>
+      <div class="tech-badge mx-auto mb-4 reveal">
+        <div class="tech-badge-glow"></div>
+        <div class="tech-badge-content">
+          <span class="tech-badge-text">MY SKILLS</span>
+          <div class="tech-badge-icon">
+            <i class="fas fa-microchip"></i>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title text-4xl md:text-6xl font-bold font-display mb-6 inline-block relative reveal">
+        <div class="tech-heading-container">
+          <span class="tech-heading-text">Technical <span class="tech-gradient-text">Expertise</span></span>
+          <div class="tech-heading-decoration">
+            <div class="tech-heading-line"></div>
+            <div class="tech-heading-dots">
+              <div class="tech-heading-dot"></div>
+              <div class="tech-heading-dot"></div>
+              <div class="tech-heading-dot"></div>
+            </div>
+          </div>
+          <div class="tech-heading-glow"></div>
+        </div>
       </h2>
-      <p class="text-gray-400 max-w-2xl mx-auto reveal">Here are the technologies and tools I work with to bring ideas to life.</p>
+
+      <p class="text-gray-400 max-w-2xl mx-auto reveal tech-subtitle">
+        Here are the technologies and tools I work with to bring ideas to life.
+        <span class="tech-subtitle-highlight"></span>
+      </p>
     </div>
-    
-    <!-- Skills Categories -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+    <!-- Futuristic Skills Categories -->
+    <div class="tech-skills-grid mb-16">
       <!-- Frontend Development -->
-      <div class="glass rounded-xl p-6 border border-gray-800 hover:border-primary transition-all duration-300 reveal">
-        <div class="flex items-center mb-6">
-          <div class="w-12 h-12 rounded-lg bg-primary bg-opacity-10 flex items-center justify-center mr-4">
-            <i class="fas fa-code text-primary text-xl"></i>
+      <div class="tech-skill-card reveal" data-category="frontend">
+        <!-- Card Header -->
+        <div class="tech-skill-header">
+          <div class="tech-skill-icon-container">
+            <div class="tech-skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
           </div>
-          <h3 class="text-xl font-bold">Frontend Development</h3>
+          <div class="tech-skill-title-container">
+            <h3 class="tech-skill-title">Frontend Development</h3>
+          </div>
+          <div class="tech-skill-tag">01</div>
         </div>
-        <p class="text-gray-400 mb-6">Building responsive and interactive user interfaces with modern frameworks and libraries.</p>
-        <div class="space-y-4">
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Angular</span>
-              <span class="text-primary">85%</span>
+
+        <!-- Card Description -->
+        <div class="tech-skill-description">
+          <p>Building responsive and interactive user interfaces with modern frameworks and libraries.</p>
+        </div>
+
+        <!-- Skills Progress -->
+        <div class="tech-skills-list">
+          <div class="tech-skill-item" data-skill="Angular" data-percent="85">
+            <div class="tech-skill-info">
+              <div class="tech-skill-name">
+                <span class="tech-skill-icon-small"><i class="fab fa-angular"></i></span>
+                <span>Angular</span>
+              </div>
+              <div class="tech-skill-percent">85%</div>
             </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-primary to-accent rounded-full" data-percent="85"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">HTML5 & CSS3</span>
-              <span class="text-primary">95%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-primary to-accent rounded-full" data-percent="95"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">JavaScript</span>
-              <span class="text-primary">85%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-primary to-accent rounded-full" data-percent="85"></div>
+            <div class="tech-skill-progress-container">
+              <div class="tech-skill-progress-bg"></div>
+              <div class="tech-skill-progress-bar" style="--percent: 85%"></div>
+              <div class="tech-skill-progress-glow"></div>
             </div>
           </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Tailwind CSS</span>
-              <span class="text-primary">90%</span>
+
+          <div class="tech-skill-item" data-skill="HTML5 & CSS3" data-percent="95">
+            <div class="tech-skill-info">
+              <div class="tech-skill-name">
+                <span class="tech-skill-icon-small"><i class="fab fa-html5"></i></span>
+                <span>HTML5 & CSS3</span>
+              </div>
+              <div class="tech-skill-percent">95%</div>
             </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-primary to-accent rounded-full" data-percent="90"></div>
+            <div class="tech-skill-progress-container">
+              <div class="tech-skill-progress-bg"></div>
+              <div class="tech-skill-progress-bar" style="--percent: 95%"></div>
+              <div class="tech-skill-progress-glow"></div>
             </div>
+          </div>
+
+          <div class="tech-skill-item" data-skill="JavaScript" data-percent="85">
+            <div class="tech-skill-info">
+              <div class="tech-skill-name">
+                <span class="tech-skill-icon-small"><i class="fab fa-js"></i></span>
+                <span>JavaScript</span>
+              </div>
+              <div class="tech-skill-percent">85%</div>
+            </div>
+            <div class="tech-skill-progress-container">
+              <div class="tech-skill-progress-bg"></div>
+              <div class="tech-skill-progress-bar" style="--percent: 85%"></div>
+              <div class="tech-skill-progress-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subtle Decorations -->
+        <div class="tech-skill-decorations">
+          <div class="tech-skill-circuit"></div>
+        </div>
+
+        <!-- Hover Effects -->
+        <div class="tech-skill-hover-effects">
+          <div class="tech-skill-glow"></div>
+        </div>
+
+          <div class="tech-skill-item" data-skill="Tailwind CSS" data-percent="90">
+            <div class="tech-skill-info">
+              <div class="tech-skill-name">
+                <span class="tech-skill-icon-small">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                  </svg>
+                </span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="tech-skill-percent">90%</div>
+            </div>
+            <div class="tech-skill-progress-container">
+              <div class="tech-skill-progress-bg"></div>
+              <div class="tech-skill-progress-bar" style="--percent: 90%"></div>
+              <div class="tech-skill-progress-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-skill-card reveal" data-category="animation">
+          <!-- Card Header -->
+          <div class="tech-skill-header">
+            <div class="tech-skill-icon-container">
+              <div class="tech-skill-icon">
+                <i class="fas fa-magic"></i>
+              </div>
+            </div>
+            <div class="tech-skill-title-container">
+              <h3 class="tech-skill-title">Animation & Interaction</h3>
+            </div>
+            <div class="tech-skill-tag">02</div>
+          </div>
+  
+          <!-- Card Description -->
+          <div class="tech-skill-description">
+            <p>Creating smooth animations and interactive experiences that engage users.</p>
+          </div>
+  
+          <!-- Skills Progress -->
+          <div class="tech-skills-list">
+            <div class="tech-skill-item" data-skill="GSAP" data-percent="80">
+              <div class="tech-skill-info">
+                <div class="tech-skill-name">
+                  <span class="tech-skill-icon-small"><i class="fas fa-bolt"></i></span>
+                  <span>GSAP</span>
+                </div>
+                <div class="tech-skill-percent">80%</div>
+              </div>
+              <div class="tech-skill-progress-container">
+                <div class="tech-skill-progress-bg"></div>
+                <div class="tech-skill-progress-bar" style="--percent: 80%"></div>
+                <div class="tech-skill-progress-glow"></div>
+              </div>
+            </div>
+  
+            <div class="tech-skill-item" data-skill="Framer Motion" data-percent="75">
+              <div class="tech-skill-info">
+                <div class="tech-skill-name">
+                  <span class="tech-skill-icon-small"><i class="fas fa-wind"></i></span>
+                  <span>Framer Motion</span>
+                </div>
+                <div class="tech-skill-percent">75%</div>
+              </div>
+              <div class="tech-skill-progress-container">
+                <div class="tech-skill-progress-bg"></div>
+                <div class="tech-skill-progress-bar" style="--percent: 75%"></div>
+                <div class="tech-skill-progress-glow"></div>
+              </div>
+            </div>
+  
+            <div class="tech-skill-item" data-skill="Three.js" data-percent="40">
+              <div class="tech-skill-info">
+                <div class="tech-skill-name">
+                  <span class="tech-skill-icon-small">
+                    <i class="fas fa-cube"></i>
+                  </span>
+                  <span>Three.js</span>
+                </div>
+                <div class="tech-skill-percent">40%</div>
+              </div>
+              <div class="tech-skill-progress-container">
+                <div class="tech-skill-progress-bg"></div>
+                <div class="tech-skill-progress-bar" style="--percent: 40%"></div>
+                <div class="tech-skill-progress-glow"></div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Subtle Decorations -->
+          <div class="tech-skill-decorations">
+            <div class="tech-skill-circuit"></div>
+          </div>
+  
+          <!-- Hover Effects -->
+          <div class="tech-skill-hover-effects">
+            <div class="tech-skill-glow"></div>
+          </div>
+        </div>
+        <div class="tech-skill-card reveal" data-category="design">
+          <!-- Card Header -->
+          <div class="tech-skill-header">
+            <div class="tech-skill-icon-container">
+              <div class="tech-skill-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+            </div>
+            <div class="tech-skill-title-container">
+              <h3 class="tech-skill-title">Design & Tools</h3>
+            </div>
+            <div class="tech-skill-tag">03</div>
+          </div>
+  
+          <!-- Card Description -->
+          <div class="tech-skill-description">
+            <p>Using design tools and development utilities to create and implement projects.</p>
+          </div>
+  
+          <!-- Skills Progress -->
+          <div class="tech-skills-list">
+            <div class="tech-skill-item" data-skill="Figma" data-percent="85">
+              <div class="tech-skill-info">
+                <div class="tech-skill-name">
+                  <span class="tech-skill-icon-small">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8.5,5H10C11.105,5,12,5.895,12,7V10H8.5C7.395,10,6.5,9.105,6.5,8V7C6.5,5.895,7.395,5,8.5,5z"/>
+                      <path d="M8.5,11H12V14C12,15.105,11.105,16,10,16H8.5C7.395,16,6.5,15.105,6.5,14V13C6.5,11.895,7.395,11,8.5,11z"/>
+                      <path d="M8.5,17H10C11.105,17,12,17.895,12,19V20C12,21.105,11.105,22,10,22H8.5C7.395,22,6.5,21.105,6.5,20V19C6.5,17.895,7.395,17,8.5,17z"/>
+                    </svg>
+                  </span>
+                  <span>Figma</span>
+                </div>
+                <div class="tech-skill-percent">85%</div>
+              </div>
+              <div class="tech-skill-progress-container">
+                <div class="tech-skill-progress-bg"></div>
+                <div class="tech-skill-progress-bar" style="--percent: 85%"></div>
+                <div class="tech-skill-progress-glow"></div>
+              </div>
+            </div>
+  
+            <div class="tech-skill-item" data-skill="Adobe XD" data-percent="75">
+              <div class="tech-skill-info">
+                <div class="tech-skill-name">
+                  <span class="tech-skill-icon-small">
+                    <i class="fab fa-adobe"></i>
+                  </span>
+                  <span>Adobe XD</span>
+                </div>
+                <div class="tech-skill-percent">75%</div>
+              </div>
+              <div class="tech-skill-progress-container">
+                <div class="tech-skill-progress-bg"></div>
+                <div class="tech-skill-progress-bar" style="--percent: 75%"></div>
+                <div class="tech-skill-progress-glow"></div>
+              </div>
+            </div>
+  
+            <div class="tech-skill-item" data-skill="VS Code" data-percent="95">
+              <div class="tech-skill-info">
+                <div class="tech-skill-name">
+                  <span class="tech-skill-icon-small">
+                    <i class="fas fa-code"></i>
+                  </span>
+                  <span>VS Code</span>
+                </div>
+                <div class="tech-skill-percent">95%</div>
+              </div>
+              <div class="tech-skill-progress-container">
+                <div class="tech-skill-progress-bg"></div>
+                <div class="tech-skill-progress-bar" style="--percent: 95%"></div>
+                <div class="tech-skill-progress-glow"></div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Subtle Decorations -->
+          <div class="tech-skill-decorations">
+            <div class="tech-skill-circuit"></div>
+          </div>
+  
+          <!-- Hover Effects -->
+          <div class="tech-skill-hover-effects">
+            <div class="tech-skill-glow"></div>
           </div>
         </div>
       </div>
-      
+
       <!-- Animation & Interaction -->
-      <div class="glass rounded-xl p-6 border border-gray-800 hover:border-secondary transition-all duration-300 reveal">
-        <div class="flex items-center mb-6">
-          <div class="w-12 h-12 rounded-lg bg-secondary bg-opacity-10 flex items-center justify-center mr-4">
-            <i class="fas fa-magic text-secondary text-xl"></i>
-          </div>
-          <h3 class="text-xl font-bold">Animation & Interaction</h3>
-        </div>
-        <p class="text-gray-400 mb-6">Creating smooth animations and interactive experiences that engage users.</p>
-        <div class="space-y-4">
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">GSAP</span>
-              <span class="text-secondary">80%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-secondary to-accent rounded-full" data-percent="80"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Locomotive Scroll</span>
-              <span class="text-secondary">75%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-secondary to-accent rounded-full" data-percent="75"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">CSS Animations</span>
-              <span class="text-secondary">90%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-secondary to-accent rounded-full" data-percent="90"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Three.js</span>
-              <span class="text-secondary">40%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-secondary to-accent rounded-full" data-percent="40"></div>
-            </div>
-          </div>
-        </div>
-      </div>
       
+
       <!-- Design & Tools -->
-      <div class="glass rounded-xl p-6 border border-gray-800 hover:border-accent transition-all duration-300 reveal">
-        <div class="flex items-center mb-6">
-          <div class="w-12 h-12 rounded-lg bg-accent bg-opacity-10 flex items-center justify-center mr-4">
-            <i class="fas fa-paint-brush text-accent text-xl"></i>
-          </div>
-          <h3 class="text-xl font-bold">Design & Tools</h3>
-        </div>
-        <p class="text-gray-400 mb-6">Using design tools and development utilities to create and implement projects.</p>
-        <div class="space-y-4">
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Figma</span>
-              <span class="text-accent">85%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-accent to-primary rounded-full" data-percent="85"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Git & GitHub</span>
-              <span class="text-accent">80%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-accent to-primary rounded-full" data-percent="80"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">Responsive Design</span>
-              <span class="text-accent">90%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-accent to-primary rounded-full" data-percent="90"></div>
-            </div>
-          </div>
-          
-          <div class="skill-item">
-            <div class="flex justify-between mb-1">
-              <span class="font-medium">VS Code</span>
-              <span class="text-accent">95%</span>
-            </div>
-            <div class="w-full h-2 bg-gray-700 rounded-full overflow-hidden">
-              <div class="progress-bar h-full bg-gradient-to-r from-accent to-primary rounded-full" data-percent="95"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     
-    <!-- Technology Icons Grid -->
-    <h3 class="text-2xl font-bold mb-8 text-center reveal">Technologies I Work With</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 reveal">
+    </div>
+
+    <!-- Futuristic Technology Icons Grid -->
+    <div class="tech-section-divider">
+      <div class="tech-divider-line"></div>
+      <div class="tech-divider-text reveal">Technologies I Work With</div>
+      <div class="tech-divider-line"></div>
+    </div>
+
+    <div class="tech-icons-grid reveal">
       <!-- Angular -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-angular text-5xl text-primary mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">Angular</h4>
+      <div class="tech-icon-card" data-tech="angular">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-angular"></i>
+              </div>
+              <h4 class="tech-icon-name">Angular</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">Frontend framework</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- HTML5 -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-html5 text-5xl text-orange-500 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">HTML5</h4>
+      <div class="tech-icon-card" data-tech="html5">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h4 class="tech-icon-name">HTML5</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Expert</div>
+              <div class="tech-icon-description">Markup language</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- CSS3 -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-css3-alt text-5xl text-blue-500 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">CSS3</h4>
+      <div class="tech-icon-card" data-tech="css3">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h4 class="tech-icon-name">CSS3</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Expert</div>
+              <div class="tech-icon-description">Styling language</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- JavaScript -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-js text-5xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">JavaScript</h4>
+      <div class="tech-icon-card" data-tech="javascript">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-js"></i>
+              </div>
+              <h4 class="tech-icon-name">JavaScript</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">Programming language</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- Tailwind CSS -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <svg class="w-12 h-12 mb-4 text-blue-400 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
-        </svg>
-        <h4 class="text-lg font-medium">Tailwind CSS</h4>
+      <div class="tech-icon-card" data-tech="tailwind">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
+                </svg>
+              </div>
+              <h4 class="tech-icon-name">Tailwind CSS</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">CSS framework</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- GSAP -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <svg class="w-12 h-12 mb-4 text-green-400 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24 12l-5.72 5.746-5.724-5.741 5.724-5.75L24 12zM5.72 6.254 0 12l5.72 5.746h11.44L5.72 6.254z"/>
-        </svg>
-        <h4 class="text-lg font-medium">GSAP</h4>
+      <div class="tech-icon-card" data-tech="gsap">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 12l-5.72 5.746-5.724-5.741 5.724-5.75L24 12zM5.72 6.254 0 12l5.72 5.746h11.44L5.72 6.254z"/>
+                </svg>
+              </div>
+              <h4 class="tech-icon-name">GSAP</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">Animation library</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- Git -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-git-alt text-5xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">Git</h4>
+      <div class="tech-icon-card" data-tech="git">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h4 class="tech-icon-name">Git</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">Version control</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- GitHub -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-github text-5xl text-white mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">GitHub</h4>
+      <div class="tech-icon-card" data-tech="github">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-github"></i>
+              </div>
+              <h4 class="tech-icon-name">GitHub</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">Code hosting</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- Figma -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-figma text-5xl text-purple-500 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">Figma</h4>
+      <div class="tech-icon-card" data-tech="figma">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-figma"></i>
+              </div>
+              <h4 class="tech-icon-name">Figma</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">Design tool</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- VS Code -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <svg class="w-12 h-12 mb-4 text-blue-500 group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
-        </svg>
-        <h4 class="text-lg font-medium">VS Code</h4>
+      <div class="tech-icon-card" data-tech="vscode">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+                </svg>
+              </div>
+              <h4 class="tech-icon-name">VS Code</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Expert</div>
+              <div class="tech-icon-description">Code editor</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- Sass -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-sass text-5xl text-pink-500 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">Sass</h4>
+      <div class="tech-icon-card" data-tech="sass">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-sass"></i>
+              </div>
+              <h4 class="tech-icon-name">Sass</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">CSS preprocessor</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
-      
+
       <!-- npm -->
-      <div class="tech-card glass p-6 rounded-lg flex flex-col items-center justify-center border border-gray-800 hover:border-primary transition-all duration-300 group">
-        <i class="fab fa-npm text-5xl text-red-500 mb-4 group-hover:scale-110 transition-transform duration-300"></i>
-        <h4 class="text-lg font-medium">npm</h4>
+      <div class="tech-icon-card" data-tech="npm">
+        <div class="tech-icon-inner">
+          <div class="tech-icon-front">
+            <div class="tech-icon-content">
+              <div class="tech-icon-symbol">
+                <i class="fab fa-npm"></i>
+              </div>
+              <h4 class="tech-icon-name">npm</h4>
+            </div>
+          </div>
+          <div class="tech-icon-back">
+            <div class="tech-icon-details">
+              <div class="tech-icon-level">Advanced</div>
+              <div class="tech-icon-description">Package manager</div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-icon-glow"></div>
       </div>
     </div>
-    
-    <!-- Currently Learning Section -->
-    <div class="mt-16 text-center">
-      <h3 class="text-2xl font-bold mb-8 reveal">Currently Learning</h3>
-      <div class="flex flex-wrap justify-center gap-6 reveal">
-        <div class="glass px-4 py-2 rounded-full flex items-center border border-gray-800">
-          <i class="fab fa-react text-blue-400 mr-2"></i>
-          <span>React</span>
+
+    <!-- Futuristic Currently Learning Section -->
+    <div class="tech-learning-section">
+      <div class="tech-learning-header reveal">
+        <div class="tech-learning-title">Currently Exploring</div>
+        <div class="tech-learning-subtitle">Technologies I'm currently mastering</div>
+        <div class="tech-learning-decoration">
+          <div class="tech-learning-line"></div>
+          <div class="tech-learning-pulse"></div>
         </div>
-        <div class="glass px-4 py-2 rounded-full flex items-center border border-gray-800">
-          <i class="fab fa-node-js text-green-500 mr-2"></i>
-          <span>Node.js</span>
+      </div>
+
+      <div class="tech-learning-badges reveal">
+        <div class="tech-learning-badge" data-tech="react">
+          <div class="tech-learning-badge-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="tech-learning-badge-text">React</div>
+          <div class="tech-learning-badge-progress" style="--progress: 65%"></div>
+          <div class="tech-learning-badge-glow"></div>
         </div>
-        <div class="glass px-4 py-2 rounded-full flex items-center border border-gray-800">
-          <svg class="w-4 h-4 mr-2 text-purple-500" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.66 15.316l-3.9-3.9 1.412-1.412 2.488 2.488 6.582-6.582 1.412 1.412-7.994 7.994z"/>
-          </svg>
-          <span>Three.js</span>
+
+        <div class="tech-learning-badge" data-tech="nodejs">
+          <div class="tech-learning-badge-icon">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="tech-learning-badge-text">Node.js</div>
+          <div class="tech-learning-badge-progress" style="--progress: 55%"></div>
+          <div class="tech-learning-badge-glow"></div>
         </div>
-        <div class="glass px-4 py-2 rounded-full flex items-center border border-gray-800">
-          <i class="fab fa-microsoft text-blue-500 mr-2"></i>
-          <span>ASP.NET Core</span>
+
+        <div class="tech-learning-badge" data-tech="threejs">
+          <div class="tech-learning-badge-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <div class="tech-learning-badge-text">Three.js</div>
+          <div class="tech-learning-badge-progress" style="--progress: 40%"></div>
+          <div class="tech-learning-badge-glow"></div>
+        </div>
+
+        <div class="tech-learning-badge" data-tech="aspnet">
+          <div class="tech-learning-badge-icon">
+            <i class="fab fa-microsoft"></i>
+          </div>
+          <div class="tech-learning-badge-text">ASP.NET Core</div>
+          <div class="tech-learning-badge-progress" style="--progress: 60%"></div>
+          <div class="tech-learning-badge-glow"></div>
         </div>
       </div>
     </div>
@@ -302,12 +679,12 @@
     width: 0;
     transition: width 1.5s ease-in-out;
   }
-  
+
   /* Tech Card Hover Effect */
   .tech-card {
     transition: all 0.3s ease;
   }
-  
+
   .tech-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
@@ -319,16 +696,16 @@
     // Animate progress bars when in view
     function animateProgressBars() {
       const progressBars = document.querySelectorAll('.progress-bar');
-      
+
       progressBars.forEach(bar => {
         const percent = bar.getAttribute('data-percent');
         bar.style.width = `${percent}%`;
       });
     }
-    
+
     // Initialize progress bar animations when section is in view
     const skillsSection = document.getElementById('skills');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -337,12 +714,12 @@
         }
       });
     }, { threshold: 0.2 });
-    
+
     observer.observe(skillsSection);
-    
+
     // Add hover effect to tech cards
     const techCards = document.querySelectorAll('.tech-card');
-    
+
     techCards.forEach(card => {
       card.addEventListener('mouseenter', () => {
         const siblings = Array.from(card.parentElement.children).filter(sibling => sibling !== card);
@@ -350,7 +727,7 @@
           sibling.style.opacity = '0.5';
         });
       });
-      
+
       card.addEventListener('mouseleave', () => {
         const siblings = Array.from(card.parentElement.children);
         siblings.forEach(sibling => {

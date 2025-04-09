@@ -1,0 +1,323 @@
+<header class="fixed top-0 left-0 w-full glass z-50 transition-all duration-500 py-4">
+  <div class="container mx-auto px-6 flex justify-between items-center">
+    <!-- Logo with animated gradient effect -->
+    <a href="/" class="group flex items-center">
+      <div class="relative overflow-hidden w-10 h-10 rounded-lg mr-3 bg-gradient-to-r from-primary via-secondary to-accent animate-gradient bg-[length:200%_auto] group-hover:shadow-lg transition-all duration-500">
+        <span class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">P</span>
+      </div>
+      <div>
+        <span class="text-2xl font-bold font-display gradient-text">Prusotam</span>
+        <span class="block text-xs uppercase tracking-widest mt-0.5 text-gray-500 dark:text-gray-400">Web Developer</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation with hover effects -->
+    <nav class="hidden lg:flex space-x-1">
+      <a href="/" class="nav-link <%= page === 'home' ? 'active' : '' %>" data-text="Home">Home</a>
+      <a href="/about" class="nav-link <%= page === 'about' ? 'active' : '' %>" data-text="About">About</a>
+      <a href="/skills" class="nav-link <%= page === 'skills' ? 'active' : '' %>" data-text="Skills">Skills</a>
+      <a href="/projects" class="nav-link <%= page === 'projects' ? 'active' : '' %>" data-text="Projects">Projects</a>
+      <a href="/contact" class="nav-link <%= page === 'contact' ? 'active' : '' %>" data-text="Contact">Contact</a>
+    </nav>
+
+    <div class="flex items-center space-x-5">
+      <!-- Social Icons -->
+      <div class="hidden md:flex space-x-3">
+        <a href="https://github.com/prusotamydv" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/prusotam" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+
+      <!-- Dark/Light Mode Toggle with animated icons -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- Mobile Menu Button with animated hamburger -->
+      <button id="mobile-menu-button" class="hamburger lg:hidden" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu with animated transitions -->
+  <div id="mobile-menu" class="fixed inset-0 bg-light dark:bg-dark bg-opacity-95 dark:bg-opacity-95 z-40 flex-col justify-center items-center hidden transition-all duration-500 backdrop-blur-md">
+    <nav class="flex flex-col items-center justify-center space-y-8 h-full text-4xl font-display">
+      <a href="/" class="mobile-nav-link <%= page === 'home' ? 'text-primary' : '' %>">Home</a>
+      <a href="/about" class="mobile-nav-link <%= page === 'about' ? 'text-primary' : '' %>">About</a>
+      <a href="/skills" class="mobile-nav-link <%= page === 'skills' ? 'text-primary' : '' %>">Skills</a>
+      <a href="/projects" class="mobile-nav-link <%= page === 'projects' ? 'text-primary' : '' %>">Projects</a>
+      <a href="/contact" class="mobile-nav-link <%= page === 'contact' ? 'text-primary' : '' %>">Contact</a>
+    </nav>
+
+    <!-- Social Icons for Mobile -->
+    <div class="flex space-x-6 mb-12">
+      <a href="https://github.com/prusotamydv" target="_blank" class="text-2xl hover:text-primary transition-colors duration-300">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/prusotam" target="_blank" class="text-2xl hover:text-primary transition-colors duration-300">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:your-email@example.com" class="text-2xl hover:text-primary transition-colors duration-300">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* Navigation link hover effects */
+  .nav-link {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .nav-link::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    transform: translateY(0);
+  }
+
+  .nav-link span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link:hover span,
+  .nav-link.active span {
+    transform: translateY(-100%);
+  }
+
+  .nav-link.active {
+    color: var(--color-primary);
+  }
+
+  /* Social icons hover effect */
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(99, 102, 241, 0.1);
+    color: var(--color-text);
+    transition: all 0.3s ease;
+  }
+
+  .social-icon:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  /* Theme toggle button */
+  .theme-toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(99, 102, 241, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .theme-toggle:hover {
+    background-color: rgba(99, 102, 241, 0.2);
+  }
+
+  .sun-icon,
+  .moon-icon {
+    position: absolute;
+    transition: opacity 0.3s ease, transform 0.5s ease;
+  }
+
+  .dark .sun-icon {
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  .dark .moon-icon {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  .sun-icon {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+
+  .moon-icon {
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  /* Hamburger menu animation */
+  .hamburger {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 50;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+
+  /* Mobile navigation links */
+  .mobile-nav-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+  }
+
+  .mobile-nav-link:hover::after,
+  .mobile-nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  .mobile-nav-link:hover {
+    color: var(--color-primary);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Mobile menu toggle with animation
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenuButton.classList.toggle('active');
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+        document.body.style.overflow = ''; // Re-enable scrolling
+      }
+    });
+
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+      htmlElement.classList.add('dark');
+    }
+
+    // Toggle theme when button is clicked
+    themeToggle.addEventListener('click', () => {
+      if (htmlElement.classList.contains('dark')) {
+        htmlElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        htmlElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('py-2', 'shadow-md');
+        header.classList.remove('py-4');
+
+        // Hide header when scrolling down, show when scrolling up
+        if (window.scrollY > lastScrollY) {
+          header.style.transform = 'translateY(-100%)';
+        } else {
+          header.style.transform = 'translateY(0)';
+        }
+      } else {
+        header.classList.remove('py-2', 'shadow-md');
+        header.classList.add('py-4');
+        header.style.transform = 'translateY(0)';
+      }
+
+      lastScrollY = window.scrollY;
+    });
+  });
+</script>

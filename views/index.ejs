@@ -26,64 +26,50 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <!-- Lenis for smooth scrolling -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/dist/lenis.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <!-- Three.js for 3D elements -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting@1.0.6/dist/splitting-cells.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Outfit', 'sans-serif'],
-            display: ['Space Grotesk', 'sans-serif'],
-          },
-          colors: {
-            primary: '#6366f1', // Indigo
-            secondary: '#ec4899', // Pink
-            accent: '#8b5cf6', // Purple
-            dark: '#0f172a', // Slate 900
-            light: '#f8fafc', // Slate 50
-            darkgray: '#1e293b', // Slate 800
-            lightgray: '#e2e8f0', // Slate 200
-          },
-          animation: {
-            'gradient': 'gradient 8s linear infinite',
-            'float': 'float 6s ease-in-out infinite',
-            'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-          },
-          keyframes: {
-            gradient: {
-              '0%, 100%': { backgroundPosition: '0% 50%' },
-              '50%': { backgroundPosition: '100% 50%' },
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0)' },
-              '50%': { transform: 'translateY(-20px)' },
-            },
-          },
-          backgroundImage: {
-            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            'noise-pattern': "url('/images/noise.png')",
-          },
-        },
-      },
-    }
-  </script>
-
-  <!-- Custom Preloader Style -->
+  <!-- Custom Styles -->
   <style>
+    :root {
+      --color-bg: #0a0a0f;
+      --color-bg-alt: #13131f;
+      --color-text: #f8fafc;
+      --color-text-alt: #94a3b8;
+      --color-primary: #6366f1;
+      --color-secondary: #ec4899;
+      --color-accent: #8b5cf6;
+      --color-success: #10b981;
+      --color-warning: #f59e0b;
+      --color-error: #ef4444;
+      --font-sans: 'Outfit', sans-serif;
+      --font-display: 'Space Grotesk', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      overflow-x: hidden;
+    }
+
+    /* Preloader */
     .preloader {
       position: fixed;
       top: 0;
@@ -103,26 +89,7 @@
       visibility: hidden;
     }
 
-    .loader {
-      width: 48px;
-      height: 48px;
-      border: 5px solid var(--color-primary);
-      border-bottom-color: transparent;
-      border-radius: 50%;
-      display: inline-block;
-      box-sizing: border-box;
-      animation: rotation 1s linear infinite;
-    }
-
-    @keyframes rotation {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
+    /* Custom Cursor */
     .cursor {
       position: fixed;
       width: 20px;
@@ -142,37 +109,20 @@
       background-color: rgba(236, 72, 153, 0.5);
     }
 
-    .noise-bg {
+    /* Noise Overlay */
+    .noise {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('/images/noise.png');
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
       opacity: 0.03;
       pointer-events: none;
       z-index: 1;
     }
 
-    :root {
-      --color-bg: #f8fafc;
-      --color-text: #0f172a;
-      --color-primary: #6366f1;
-      --color-secondary: #ec4899;
-      --color-accent: #8b5cf6;
-    }
-
-    .dark {
-      --color-bg: #0f172a;
-      --color-text: #f8fafc;
-    }
-
-    /* Smooth scrolling for the whole page */
-    html.has-scroll-smooth {
-      overflow: hidden;
-    }
-
-    /* Gradient text effect */
+    /* Gradient Text */
     .gradient-text {
       background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
       background-size: 200% auto;
@@ -181,19 +131,21 @@
       animation: gradient 8s linear infinite;
     }
 
-    /* Glass effect */
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Glass Effect */
     .glass {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(19, 19, 31, 0.7);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    .dark .glass {
-      background: rgba(15, 23, 42, 0.7);
-    }
-
-    /* Reveal animations */
+    /* Reveal Animations */
     .reveal {
       opacity: 0;
       transform: translateY(30px);
@@ -204,44 +156,119 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Floating Animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    /* Pulse Animation */
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 0.1; }
+    }
+
+    .pulse-slow {
+      animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    /* Glow Effect */
+    .glow {
+      box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    }
+
+    .glow-text {
+      text-shadow: 0 0 10px rgba(99, 102, 241, 0.7);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg-alt);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-primary);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-secondary);
+    }
   </style>
 </head>
-<body class="bg-light dark:bg-dark text-dark dark:text-light transition-colors duration-300">
+<body>
   <!-- Preloader -->
   <div class="preloader">
-    <span class="loader"></span>
+    <div class="loader">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="40" r="38" stroke="url(#gradient)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 14" stroke-dashoffset="0">
+          <animateTransform attributeName="transform" type="rotate" dur="1.5s" values="0 40 40;360 40 40" repeatCount="indefinite" />
+        </circle>
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#6366f1" />
+            <stop offset="50%" stop-color="#ec4899" />
+            <stop offset="100%" stop-color="#8b5cf6" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
   </div>
 
   <!-- Custom Cursor -->
   <div class="cursor"></div>
 
-  <!-- Noise Texture Overlay -->
-  <div class="noise-bg"></div>
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
 
   <!-- Main Content Container -->
-  <div data-scroll-container>
-    <!-- Header -->
-    <%- include('../partials/header') %>
+    <!-- Header Component -->
+    <%- include('./components/header') %>
 
     <!-- Main Content -->
     <main>
-      <%- body %>
+      <!-- Hero Section -->
+      <%- include('./components/hero') %>
+
+      <!-- About Section -->
+      <%- include('./components/about') %>
+
+      <!-- Skills Section -->
+      <%- include('./components/skills') %>
+
+      <!-- Projects Section -->
+      <%- include('./components/projects') %>
+
+      <!-- Education Section -->
+      <%- include('./components/education') %>
+
+      <!-- Contact Section -->
+      <%- include('./components/contact') %>
     </main>
 
-    <!-- Footer -->
-    <%- include('../partials/footer') %>
+    <!-- Footer Component -->
+    <%- include('./components/footer') %>
   </div>
 
   <!-- Main JavaScript -->
   <script src="/js/main.js"></script>
 
-  <!-- Initialize Custom Cursor -->
+  <!-- Custom Scripts -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // Preloader
       setTimeout(() => {
         document.querySelector('.preloader').classList.add('hidden');
-      }, 1000);
+      }, 1500);
 
       // Custom cursor
       const cursor = document.querySelector('.cursor');
@@ -260,13 +287,13 @@
       });
 
       // Add hover effect to all links and buttons
-      const links = document.querySelectorAll('a, button');
-      links.forEach(link => {
-        link.addEventListener('mouseenter', () => {
+      const interactiveElements = document.querySelectorAll('a, button, .interactive');
+      interactiveElements.forEach(element => {
+        element.addEventListener('mouseenter', () => {
           cursor.classList.add('active');
         });
 
-        link.addEventListener('mouseleave', () => {
+        element.addEventListener('mouseleave', () => {
           cursor.classList.remove('active');
         });
       });
@@ -287,17 +314,6 @@
 
       window.addEventListener('scroll', checkReveal);
       checkReveal(); // Check on page load
-
-      // Initialize VanillaTilt for card elements
-      VanillaTilt.init(document.querySelectorAll('.tilt'), {
-        max: 15,
-        speed: 400,
-        glare: true,
-        'max-glare': 0.2,
-      });
-
-      // Initialize Splitting.js for text animations
-      Splitting();
     });
   </script>
 </body>

@@ -1,0 +1,186 @@
+<section id="about" class="relative py-24 overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute right-0 top-0 w-1/3 h-1/3 bg-gradient-radial from-primary/5 to-transparent"></div>
+    <div class="absolute left-0 bottom-0 w-1/3 h-1/3 bg-gradient-radial from-secondary/5 to-transparent"></div>
+    
+    <!-- Decorative Grid Lines -->
+    <div class="absolute inset-0 flex items-center justify-center opacity-5">
+      <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-5">
+      <div class="h-full w-px bg-gradient-to-b from-transparent via-gray-500 to-transparent"></div>
+    </div>
+    
+    <!-- Decorative Elements -->
+    <div class="hidden lg:block absolute right-10 top-20 opacity-10">
+      <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="59" stroke="currentColor" stroke-width="2" stroke-dasharray="10 10"/>
+      </svg>
+    </div>
+    
+    <div class="hidden lg:block absolute left-10 bottom-20 opacity-10">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="78" height="78" stroke="currentColor" stroke-width="2" stroke-dasharray="8 8"/>
+      </svg>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Section Title with Highlight -->
+    <div class="text-center mb-16">
+      <span class="inline-block text-primary text-sm font-semibold tracking-wider uppercase mb-2 reveal">About Me</span>
+      <h2 class="section-title text-4xl md:text-5xl font-bold font-display mb-4 inline-block relative reveal">
+        Know Who <span class="gradient-text">I Am</span>
+        <span class="highlight absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></span>
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto reveal">Get to know more about me, my background, and what drives my passion for web development.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Image with Decorative Elements -->
+      <div class="relative order-2 lg:order-1">
+        <div class="about-image relative z-10 rounded-lg overflow-hidden shadow-xl border-4 border-gray-800 transform hover:scale-[1.02] transition-transform duration-500 tilt" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
+          <!-- Glowing Border Effect -->
+          <div class="absolute inset-0 border-2 border-primary rounded-lg glow"></div>
+          
+          <div class="aspect-w-4 aspect-h-3 bg-gray-900">
+            <img src="/images/about.png" alt="About Me" class="object-cover w-full h-full">
+          </div>
+          
+          <!-- Decorative Frame -->
+          <div class="absolute -top-4 -left-4 w-24 h-24 border-t-4 border-l-4 border-primary"></div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-secondary"></div>
+        </div>
+        
+        <!-- Experience Card -->
+        <div class="absolute -bottom-6 -right-6 glass shadow-lg rounded-lg p-4 z-20 reveal">
+          <div class="flex items-center">
+            <div class="flex -space-x-2 mr-4">
+              <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold">A</div>
+              <div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white font-bold">T</div>
+              <div class="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white font-bold">G</div>
+            </div>
+            <div>
+              <div class="text-sm text-gray-400">Working with</div>
+              <div class="font-medium text-white">Modern Tech Stack</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Code Snippet Card -->
+        <div class="absolute -top-6 -left-6 glass shadow-lg rounded-lg p-4 z-20 reveal">
+          <div class="text-xs text-gray-400 mb-1">// My passion</div>
+          <div class="font-mono text-sm">
+            <span class="text-pink-400">const</span> <span class="text-blue-400">passion</span> = <span class="text-green-400">'Web Development'</span>;
+          </div>
+        </div>
+      </div>
+      
+      <!-- Content -->
+      <div class="about-content space-y-6 order-1 lg:order-2">
+        <div class="inline-flex items-center px-3 py-1 rounded-full bg-primary bg-opacity-10 text-primary mb-2 reveal">
+          <span class="text-sm font-medium">My Background</span>
+        </div>
+        
+        <h3 class="text-3xl font-bold font-display mb-6 reveal">Creating digital experiences with passion and precision</h3>
+        
+        <div class="space-y-6 text-gray-300 reveal">
+          <p class="text-lg">Hello! I'm <span class="font-semibold text-white">Prusotam</span>, a passionate web developer currently in 11th grade. I love creating beautiful, functional, and user-friendly websites that deliver exceptional user experiences.</p>
+          
+          <p class="text-lg">My journey in web development started with HTML and CSS, and I've since expanded my skills to include modern frameworks like <span class="text-primary font-medium">Angular</span> and tools like <span class="text-primary font-medium">Tailwind CSS</span>, <span class="text-primary font-medium">GSAP</span>, and <span class="text-primary font-medium">Locomotive Scroll</span>.</p>
+          
+          <p class="text-lg">I'm constantly learning and exploring new technologies to improve my skills and create better web experiences. My goal is to build websites that are not only visually appealing but also performant and accessible.</p>
+        </div>
+        
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 reveal">
+          <div class="glass rounded-lg p-4 text-center">
+            <div class="text-3xl font-bold text-primary counter" data-target="10">0</div>
+            <div class="text-sm text-gray-400 mt-1">Projects</div>
+          </div>
+          <div class="glass rounded-lg p-4 text-center">
+            <div class="text-3xl font-bold text-secondary counter" data-target="15">0</div>
+            <div class="text-sm text-gray-400 mt-1">Technologies</div>
+          </div>
+          <div class="glass rounded-lg p-4 text-center">
+            <div class="text-3xl font-bold text-accent counter" data-target="2">0</div>
+            <div class="text-sm text-gray-400 mt-1">Years</div>
+          </div>
+          <div class="glass rounded-lg p-4 text-center">
+            <div class="text-3xl font-bold text-primary counter" data-target="5">0</div>
+            <div class="text-sm text-gray-400 mt-1">Clients</div>
+          </div>
+        </div>
+        
+        <!-- What I Do Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 reveal">
+          <div class="glass rounded-lg p-6 hover:border-primary transition-colors duration-300">
+            <div class="text-primary text-3xl mb-4">
+              <i class="fas fa-code"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-2">Web Development</h4>
+            <p class="text-gray-400">Creating responsive and user-friendly websites using modern technologies.</p>
+          </div>
+          
+          <div class="glass rounded-lg p-6 hover:border-secondary transition-colors duration-300">
+            <div class="text-secondary text-3xl mb-4">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-2">UI/UX Design</h4>
+            <p class="text-gray-400">Designing intuitive and visually appealing user interfaces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Counter animations
+    function animateCounters() {
+      const counters = document.querySelectorAll('.counter');
+      
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'), 10);
+        const duration = 2000; // 2 seconds
+        const step = target / (duration / 16); // 60fps
+        
+        let current = 0;
+        const timer = setInterval(() => {
+          current += step;
+          counter.textContent = Math.round(current);
+          
+          if (current >= target) {
+            counter.textContent = target;
+            clearInterval(timer);
+          }
+        }, 16);
+      });
+    }
+    
+    // Initialize counter animations when section is in view
+    const aboutSection = document.getElementById('about');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    observer.observe(aboutSection);
+    
+    // Initialize VanillaTilt for the about image
+    VanillaTilt.init(document.querySelector('.about-image'), {
+      max: 5,
+      speed: 400,
+      glare: true,
+      'max-glare': 0.3,
+      gyroscope: true
+    });
+  });
+</script>

@@ -1,0 +1,340 @@
+<section id="contact" class="relative py-24 overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute right-0 top-0 w-1/3 h-1/3 bg-gradient-radial from-primary/5 to-transparent"></div>
+    <div class="absolute left-0 bottom-0 w-1/3 h-1/3 bg-gradient-radial from-secondary/5 to-transparent"></div>
+    
+    <!-- Decorative Grid Lines -->
+    <div class="absolute inset-0 flex items-center justify-center opacity-5">
+      <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
+    </div>
+    <div class="absolute inset-0 flex items-center justify-center opacity-5">
+      <div class="h-full w-px bg-gradient-to-b from-transparent via-gray-500 to-transparent"></div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Section Title with Highlight -->
+    <div class="text-center mb-16">
+      <span class="inline-block text-primary text-sm font-semibold tracking-wider uppercase mb-2 reveal">Get In Touch</span>
+      <h2 class="section-title text-4xl md:text-5xl font-bold font-display mb-4 inline-block relative reveal">
+        Let's <span class="gradient-text">Connect</span>
+        <span class="highlight absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></span>
+      </h2>
+      <p class="text-gray-400 max-w-2xl mx-auto reveal">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Contact Information -->
+      <div class="space-y-8 order-2 lg:order-1">
+        <div class="reveal">
+          <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+          <p class="text-gray-400 mb-8">I'm interested in freelance opportunities – especially ambitious or large projects. However, if you have other requests or questions, don't hesitate to contact me using the form or my contact information.</p>
+        </div>
+        
+        <!-- Contact Details -->
+        <div class="space-y-6 reveal">
+          <!-- Location -->
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-lg bg-primary bg-opacity-10 flex items-center justify-center mr-4">
+              <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Location</h4>
+              <p class="text-gray-400">Nepal</p>
+            </div>
+          </div>
+          
+          <!-- Email -->
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-lg bg-primary bg-opacity-10 flex items-center justify-center mr-4">
+              <i class="fas fa-envelope text-primary text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Email</h4>
+              <a href="mailto:your-email@example.com" class="text-gray-400 hover:text-primary transition-colors duration-300">your-email@example.com</a>
+            </div>
+          </div>
+          
+          <!-- Phone -->
+          <div class="flex items-start">
+            <div class="w-12 h-12 rounded-lg bg-primary bg-opacity-10 flex items-center justify-center mr-4">
+              <i class="fas fa-phone-alt text-primary text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-1">Phone</h4>
+              <a href="tel:+1234567890" class="text-gray-400 hover:text-primary transition-colors duration-300">+123 456 7890</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Social Media -->
+        <div class="reveal">
+          <h3 class="text-xl font-bold mb-4">Connect With Me</h3>
+          <div class="flex space-x-4">
+            <a href="https://github.com/prusotamydv" target="_blank" class="social-icon" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/prusotam" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Availability Status -->
+        <div class="glass rounded-xl p-6 border border-green-500 reveal">
+          <div class="flex items-center">
+            <div class="w-3 h-3 rounded-full bg-green-500 mr-2 animate-pulse"></div>
+            <h4 class="text-lg font-semibold text-green-400">Available for Freelance</h4>
+          </div>
+          <p class="text-gray-400 mt-2">I'm currently available for freelance work. Feel free to reach out if you have a project in mind.</p>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="order-1 lg:order-2 reveal">
+        <div class="glass rounded-xl p-8 border border-gray-800">
+          <!-- Success Message (hidden by default) -->
+          <div id="success-message" class="hidden bg-green-900 bg-opacity-50 border border-green-500 text-green-400 px-4 py-3 rounded-lg mb-6">
+            <div class="flex items-center">
+              <i class="fas fa-check-circle mr-2"></i>
+              <span>Your message has been sent successfully!</span>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <form id="contact-form" class="space-y-6">
+            <!-- Name Input -->
+            <div class="form-group">
+              <label for="name" class="block text-gray-300 mb-2">Name</label>
+              <div class="relative">
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300">
+                <div class="input-focus-effect"></div>
+              </div>
+            </div>
+            
+            <!-- Email Input -->
+            <div class="form-group">
+              <label for="email" class="block text-gray-300 mb-2">Email</label>
+              <div class="relative">
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300">
+                <div class="input-focus-effect"></div>
+              </div>
+            </div>
+            
+            <!-- Subject Input -->
+            <div class="form-group">
+              <label for="subject" class="block text-gray-300 mb-2">Subject</label>
+              <div class="relative">
+                <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300">
+                <div class="input-focus-effect"></div>
+              </div>
+            </div>
+            
+            <!-- Message Input -->
+            <div class="form-group">
+              <label for="message" class="block text-gray-300 mb-2">Message</label>
+              <div class="relative">
+                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-primary transition-colors duration-300"></textarea>
+                <div class="input-focus-effect"></div>
+              </div>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="btn-primary w-full">
+              <span class="btn-content">
+                <span>Send Message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                </svg>
+              </span>
+              <span class="btn-glare"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Map Section -->
+    <div class="mt-20 reveal">
+      <div class="glass rounded-xl overflow-hidden border border-gray-800 h-80">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2585023738!2d85.31080807607!3d27.709898976178985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c1b0b6b4ff%3A0x3c9c2e19d16c1e91!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2sus!4v1649234567890!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Button Styles */
+  .btn-primary {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    z-index: 1;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    color: white;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+  }
+  
+  .btn-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .btn-glare {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 0;
+  }
+  
+  .btn-primary:hover .btn-glare {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  /* Social Icon Styles */
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(99, 102, 241, 0.1);
+    color: var(--color-text);
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+  }
+  
+  /* Form Input Focus Effect */
+  .form-group {
+    position: relative;
+  }
+  
+  .input-focus-effect {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  input:focus ~ .input-focus-effect,
+  textarea:focus ~ .input-focus-effect {
+    width: 100%;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.2);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Form submission handling
+    const contactForm = document.getElementById('contact-form');
+    const successMessage = document.getElementById('success-message');
+    
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(contactForm);
+      const formDataObj = Object.fromEntries(formData.entries());
+      
+      // Simulate form submission (replace with actual AJAX call)
+      setTimeout(() => {
+        // Show success message
+        successMessage.classList.remove('hidden');
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          successMessage.classList.add('hidden');
+        }, 5000);
+      }, 1000);
+    });
+    
+    // Form input animations
+    const formInputs = document.querySelectorAll('input, textarea');
+    
+    formInputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        gsap.to(input, {
+          borderColor: 'var(--color-primary)',
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+      
+      input.addEventListener('blur', () => {
+        if (!input.value) {
+          gsap.to(input, {
+            borderColor: '#374151',
+            duration: 0.3,
+            ease: 'power2.out'
+          });
+        }
+      });
+    });
+    
+    // Animate contact section elements
+    function animateContactSection() {
+      const contactElements = document.querySelectorAll('#contact .reveal');
+      
+      gsap.from(contactElements, {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '#contact',
+          start: 'top 70%',
+        }
+      });
+    }
+    
+    // Initialize animations
+    animateContactSection();
+  });
+</script>

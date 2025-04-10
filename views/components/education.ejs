@@ -1,217 +1,227 @@
 <section id="education" class="relative py-24 overflow-hidden">
-  <!-- Background Elements -->
+  <!-- Futuristic Background Elements -->
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
-    <div class="absolute left-0 top-0 w-1/3 h-1/3 bg-gradient-radial from-primary/5 to-transparent"></div>
-    <div class="absolute right-0 bottom-0 w-1/3 h-1/3 bg-gradient-radial from-secondary/5 to-transparent"></div>
-    
-    <!-- Decorative Elements -->
-    <div class="absolute inset-0 flex flex-wrap gap-8 justify-center items-center opacity-[0.02]">
-      <div class="w-20 h-20 border border-gray-500 rounded-full"></div>
-      <div class="w-16 h-16 border border-gray-500 rounded-md rotate-45"></div>
-      <div class="w-24 h-24 border border-gray-500 rounded-full"></div>
-      <div class="w-12 h-12 border border-gray-500 rounded-md rotate-12"></div>
+    <!-- Dynamic Gradient Background -->
+    <div class="absolute inset-0 education-bg-gradient"></div>
+
+    <!-- Neural Network Grid -->
+    <div class="absolute inset-0 neural-grid">
+      <div class="neural-grid-horizontal"></div>
+      <div class="neural-grid-vertical"></div>
+      <div class="neural-grid-nodes"></div>
+    </div>
+
+    <!-- Floating Tech Particles -->
+    <div class="absolute inset-0 education-particles" id="education-particles"></div>
+
+    <!-- Data Flow Lines -->
+    <div class="absolute inset-0 data-flow">
+      <div class="data-flow-line" style="--delay: 0s; --top: 20%; --speed: 15s;"></div>
+      <div class="data-flow-line" style="--delay: 2s; --top: 40%; --speed: 12s;"></div>
+      <div class="data-flow-line" style="--delay: 1s; --top: 60%; --speed: 18s;"></div>
+      <div class="data-flow-line" style="--delay: 3s; --top: 80%; --speed: 10s;"></div>
     </div>
   </div>
-  
+
   <div class="container mx-auto px-6 relative z-10">
-    <!-- Section Title with Highlight -->
-    <div class="text-center mb-16">
-      <span class="inline-block text-primary text-sm font-semibold tracking-wider uppercase mb-2 reveal">My Journey</span>
-      <h2 class="section-title text-4xl md:text-5xl font-bold font-display mb-4 inline-block relative reveal">
-        Education & <span class="gradient-text">Achievements</span>
-        <span class="highlight absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary to-secondary"></span>
-      </h2>
-      <p class="text-gray-400 max-w-2xl mx-auto reveal">My academic background and notable achievements in the field of web development.</p>
+    <!-- Futuristic Section Title -->
+    <div class="education-title-container reveal">
+      <div class="education-badge">
+        <div class="education-badge-border"></div>
+        <div class="education-badge-content">
+          <span class="education-badge-text">MY JOURNEY</span>
+          <div class="education-badge-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+        </div>
+        <div class="education-badge-glow"></div>
+      </div>
+
+      <div class="education-heading">
+        <h2 class="education-heading-text">
+          Education & <span class="education-gradient-text">Achievements</span>
+        </h2>
+        <div class="education-heading-decoration">
+          <div class="education-heading-line"></div>
+          <div class="education-heading-dots">
+            <div class="education-heading-dot"></div>
+            <div class="education-heading-dot"></div>
+            <div class="education-heading-dot"></div>
+          </div>
+        </div>
+        <div class="education-heading-glow"></div>
+      </div>
+
+      <p class="education-subtitle reveal">My academic background and notable achievements in the field of web development.</p>
     </div>
-    
+
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-      <!-- Education Timeline -->
-      <div class="space-y-8">
-        <h3 class="text-2xl font-bold mb-8 reveal">Education</h3>
-        
+      <!-- Futuristic Education Timeline -->
+      <div>
+        <h3 class="text-2xl font-bold mb-8 reveal flex items-center gap-2">
+          <i class="fas fa-book text-primary"></i> Education
+        </h3>
+
         <!-- Timeline Container -->
-        <div class="relative border-l-2 border-gray-700 pl-8 ml-4 space-y-12">
-          <!-- Timeline Dot at the Top -->
-          <div class="absolute -left-[9px] -top-2 w-4 h-4 rounded-full bg-primary"></div>
-          
+        <div class="education-timeline-container">
+          <!-- Timeline Line -->
+          <div class="education-timeline-line"></div>
+
           <!-- High School -->
-          <div class="timeline-item relative reveal">
+          <div class="education-timeline-item">
             <!-- Timeline Dot -->
-            <div class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-            
+            <div class="education-timeline-dot"></div>
+
             <!-- Timeline Content -->
-            <div class="glass rounded-xl p-6 border border-gray-800 hover:border-primary transition-all duration-300">
-              <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                <h4 class="text-xl font-bold">High School</h4>
-                <span class="glass px-3 py-1 rounded-full text-sm text-primary mt-2 md:mt-0">2023 - Present</span>
+            <div class="education-timeline-card">
+              <div class="education-timeline-glow"></div>
+
+              <div class="education-timeline-header stagger-animation">
+                <h4 class="education-timeline-title">High School</h4>
+                <span class="education-timeline-date">2023 - Present</span>
               </div>
-              <p class="text-gray-400 mb-2">Science Stream with Computer Science</p>
-              <p class="text-gray-500">Currently pursuing my high school education with a focus on Computer Science. Maintaining excellent academic performance while working on real-world web development projects.</p>
+
+              <p class="education-timeline-subtitle stagger-animation">Science Stream with Computer Science</p>
+
+              <p class="education-timeline-content stagger-animation">Currently pursuing my high school education with a focus on Computer Science. Maintaining excellent academic performance while working on real-world web development projects.</p>
             </div>
           </div>
-          
+
           <!-- Self-Learning -->
-          <div class="timeline-item relative reveal">
+          <div class="education-timeline-item">
             <!-- Timeline Dot -->
-            <div class="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-            
+            <div class="education-timeline-dot"></div>
+
             <!-- Timeline Content -->
-            <div class="glass rounded-xl p-6 border border-gray-800 hover:border-primary transition-all duration-300">
-              <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
-                <h4 class="text-xl font-bold">Self-Learning & Online Courses</h4>
-                <span class="glass px-3 py-1 rounded-full text-sm text-primary mt-2 md:mt-0">2021 - Present</span>
+            <div class="education-timeline-card">
+              <div class="education-timeline-glow"></div>
+
+              <div class="education-timeline-header stagger-animation">
+                <h4 class="education-timeline-title">Self-Learning & Online Courses</h4>
+                <span class="education-timeline-date">2021 - Present</span>
               </div>
-              <p class="text-gray-400 mb-2">Web Development & Programming</p>
-              <p class="text-gray-500">Continuously expanding my knowledge through online courses, tutorials, and documentation. Focused on modern web technologies and best practices in software development.</p>
+
+              <p class="education-timeline-subtitle stagger-animation">Web Development & Programming</p>
+
+              <p class="education-timeline-content stagger-animation">Continuously expanding my knowledge through online courses, tutorials, and documentation. Focused on modern web technologies and best practices in software development.</p>
             </div>
           </div>
-          
-          <!-- Timeline Dot at the Bottom -->
-          <div class="absolute -left-[9px] bottom-0 w-4 h-4 rounded-full bg-primary"></div>
         </div>
       </div>
-      
-      <!-- Achievements & Certifications -->
+
+      <!-- Futuristic Achievements & Certifications -->
       <div>
-        <h3 class="text-2xl font-bold mb-8 reveal">Achievements & Certifications</h3>
-        
-        <div class="space-y-6">
+        <h3 class="text-2xl font-bold mb-8 reveal flex items-center gap-2">
+          <i class="fas fa-trophy text-secondary"></i> Achievements & Certifications
+        </h3>
+
+        <div class="education-achievement-container">
           <!-- Achievement 1 -->
-          <div class="glass rounded-xl p-6 border border-gray-800 hover:border-secondary transition-all duration-300 reveal">
-            <div class="flex items-start">
-              <div class="w-12 h-12 rounded-lg bg-secondary bg-opacity-10 flex items-center justify-center mr-4 mt-1">
-                <i class="fas fa-trophy text-secondary text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold mb-2">Web Development Competition Winner</h4>
-                <p class="text-gray-400 mb-1">Local Hackathon - 2022</p>
-                <p class="text-gray-500">Won first place in a local web development competition for creating an innovative and accessible website solution.</p>
-              </div>
+          <div class="education-achievement-card">
+            <div class="education-achievement-glow"></div>
+
+            <div class="education-achievement-icon-container">
+              <i class="fas fa-trophy education-achievement-icon"></i>
+            </div>
+
+            <div class="education-achievement-content">
+              <h4 class="education-achievement-title">Web Development Competition Winner</h4>
+              <p class="education-achievement-subtitle">Local Hackathon - 2022</p>
+              <p class="education-achievement-description">Won first place in a local web development competition for creating an innovative and accessible website solution.</p>
             </div>
           </div>
-          
+
           <!-- Achievement 2 -->
-          <div class="glass rounded-xl p-6 border border-gray-800 hover:border-secondary transition-all duration-300 reveal">
-            <div class="flex items-start">
-              <div class="w-12 h-12 rounded-lg bg-secondary bg-opacity-10 flex items-center justify-center mr-4 mt-1">
-                <i class="fas fa-certificate text-secondary text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold mb-2">Angular Certification</h4>
-                <p class="text-gray-400 mb-1">Online Course - 2022</p>
-                <p class="text-gray-500">Completed a comprehensive Angular certification course, demonstrating proficiency in building modern web applications.</p>
-              </div>
+          <div class="education-achievement-card">
+            <div class="education-achievement-glow"></div>
+
+            <div class="education-achievement-icon-container">
+              <i class="fas fa-certificate education-achievement-icon"></i>
+            </div>
+
+            <div class="education-achievement-content">
+              <h4 class="education-achievement-title">Angular Certification</h4>
+              <p class="education-achievement-subtitle">Online Course - 2022</p>
+              <p class="education-achievement-description">Completed a comprehensive Angular certification course, demonstrating proficiency in building modern web applications.</p>
             </div>
           </div>
-          
+
           <!-- Achievement 3 -->
-          <div class="glass rounded-xl p-6 border border-gray-800 hover:border-secondary transition-all duration-300 reveal">
-            <div class="flex items-start">
-              <div class="w-12 h-12 rounded-lg bg-secondary bg-opacity-10 flex items-center justify-center mr-4 mt-1">
-                <i class="fas fa-code text-secondary text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold mb-2">Open Source Contributor</h4>
-                <p class="text-gray-400 mb-1">GitHub - 2023</p>
-                <p class="text-gray-500">Actively contributing to open-source projects, helping improve documentation and fixing bugs in popular web development libraries.</p>
-              </div>
+          <div class="education-achievement-card">
+            <div class="education-achievement-glow"></div>
+
+            <div class="education-achievement-icon-container">
+              <i class="fas fa-code education-achievement-icon"></i>
+            </div>
+
+            <div class="education-achievement-content">
+              <h4 class="education-achievement-title">Open Source Contributor</h4>
+              <p class="education-achievement-subtitle">GitHub - 2023</p>
+              <p class="education-achievement-description">Actively contributing to open-source projects, helping improve documentation and fixing bugs in popular web development libraries.</p>
             </div>
           </div>
-          
+
           <!-- Achievement 4 -->
-          <div class="glass rounded-xl p-6 border border-gray-800 hover:border-secondary transition-all duration-300 reveal">
-            <div class="flex items-start">
-              <div class="w-12 h-12 rounded-lg bg-secondary bg-opacity-10 flex items-center justify-center mr-4 mt-1">
-                <i class="fas fa-laptop-code text-secondary text-xl"></i>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold mb-2">Web Accessibility Certification</h4>
-                <p class="text-gray-400 mb-1">Online Course - 2023</p>
-                <p class="text-gray-500">Completed certification in web accessibility standards and best practices, ensuring inclusive design in all projects.</p>
-              </div>
+          <div class="education-achievement-card">
+            <div class="education-achievement-glow"></div>
+
+            <div class="education-achievement-icon-container">
+              <i class="fas fa-laptop-code education-achievement-icon"></i>
+            </div>
+
+            <div class="education-achievement-content">
+              <h4 class="education-achievement-title">Web Accessibility Certification</h4>
+              <p class="education-achievement-subtitle">Online Course - 2023</p>
+              <p class="education-achievement-description">Completed certification in web accessibility standards and best practices, ensuring inclusive design in all projects.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    
-    <!-- Goals Section -->
-    <div class="mt-20">
-      <h3 class="text-2xl font-bold mb-8 text-center reveal">Future Goals</h3>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+
+    <!-- Futuristic Goals Section -->
+    <div class="education-goals-container">
+      <h3 class="education-goals-title reveal">Future Goals</h3>
+
+      <div class="education-goals-grid">
         <!-- Goal 1 -->
-        <div class="glass rounded-xl p-6 border border-gray-800 hover:border-accent transition-all duration-300 text-center">
-          <div class="w-16 h-16 rounded-full bg-accent bg-opacity-10 flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-graduation-cap text-accent text-2xl"></i>
+        <div class="education-goal-card">
+          <div class="education-goal-glow"></div>
+
+          <div class="education-goal-icon-container">
+            <i class="fas fa-graduation-cap education-goal-icon"></i>
           </div>
-          <h4 class="text-xl font-bold mb-2">Higher Education</h4>
-          <p class="text-gray-400">Pursue a degree in Computer Science to deepen my understanding of software development principles.</p>
+
+          <h4 class="education-goal-title">Higher Education</h4>
+          <p class="education-goal-description">Pursue a degree in Computer Science to deepen my understanding of software development principles.</p>
         </div>
-        
+
         <!-- Goal 2 -->
-        <div class="glass rounded-xl p-6 border border-gray-800 hover:border-accent transition-all duration-300 text-center">
-          <div class="w-16 h-16 rounded-full bg-accent bg-opacity-10 flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-briefcase text-accent text-2xl"></i>
+        <div class="education-goal-card">
+          <div class="education-goal-glow"></div>
+
+          <div class="education-goal-icon-container">
+            <i class="fas fa-briefcase education-goal-icon"></i>
           </div>
-          <h4 class="text-xl font-bold mb-2">Professional Career</h4>
-          <p class="text-gray-400">Work with innovative companies to build impactful web applications and continue growing as a developer.</p>
+
+          <h4 class="education-goal-title">Professional Career</h4>
+          <p class="education-goal-description">Work with innovative companies to build impactful web applications and continue growing as a developer.</p>
         </div>
-        
+
         <!-- Goal 3 -->
-        <div class="glass rounded-xl p-6 border border-gray-800 hover:border-accent transition-all duration-300 text-center">
-          <div class="w-16 h-16 rounded-full bg-accent bg-opacity-10 flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-lightbulb text-accent text-2xl"></i>
+        <div class="education-goal-card">
+          <div class="education-goal-glow"></div>
+
+          <div class="education-goal-icon-container">
+            <i class="fas fa-lightbulb education-goal-icon"></i>
           </div>
-          <h4 class="text-xl font-bold mb-2">Continuous Learning</h4>
-          <p class="text-gray-400">Stay updated with the latest technologies and expand my skills to include backend development and 3D web experiences.</p>
+
+          <h4 class="education-goal-title">Continuous Learning</h4>
+          <p class="education-goal-description">Stay updated with the latest technologies and expand my skills to include backend development and 3D web experiences.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Timeline animation
-    function animateTimeline() {
-      const timelineItems = document.querySelectorAll('.timeline-item');
-      
-      gsap.from(timelineItems, {
-        opacity: 0,
-        x: -50,
-        stagger: 0.3,
-        duration: 0.8,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: '#education',
-          start: 'top 70%',
-        }
-      });
-    }
-    
-    // Initialize timeline animation
-    animateTimeline();
-    
-    // Achievement cards hover effect
-    const achievementCards = document.querySelectorAll('#education .glass');
-    
-    achievementCards.forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        gsap.to(card, {
-          y: -10,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      });
-      
-      card.addEventListener('mouseleave', () => {
-        gsap.to(card, {
-          y: 0,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      });
-    });
-  });
-</script>
+<!-- Education section script is now in a separate file: public/js/education.js -->

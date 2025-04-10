@@ -1,0 +1,635 @@
+/* Futuristic Education Section Styles */
+
+/* Background Elements */
+.education-bg-gradient {
+  background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+  animation: pulse-gradient 8s ease-in-out infinite;
+}
+
+@keyframes pulse-gradient {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.2; }
+}
+
+.education-grid {
+  position: relative;
+  z-index: 1;
+}
+
+/* Futuristic Section Title */
+.education-title-container {
+  position: relative;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.education-badge {
+  position: relative;
+  display: inline-flex;
+  padding: 0.5rem 1.5rem;
+  background: rgba(19, 19, 31, 0.7);
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.education-badge-border {
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--color-primary);
+  border-radius: 30px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.education-badge-glow {
+  position: absolute;
+  inset: -5px;
+  background: radial-gradient(circle at center, var(--color-primary) 0%, transparent 70%);
+  opacity: 0.1;
+  filter: blur(10px);
+  animation: badge-glow-pulse 4s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes badge-glow-pulse {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.3; }
+}
+
+.education-badge-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.education-badge-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.education-badge-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  animation: badge-icon-pulse 3s ease-in-out infinite;
+}
+
+@keyframes badge-icon-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.education-heading {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.education-heading-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.education-gradient-text {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-accent));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 8s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.education-heading-decoration {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.education-heading-line {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), transparent);
+}
+
+.education-heading-dots {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.education-heading-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  opacity: 0.7;
+  animation: dot-pulse 3s ease-in-out infinite;
+}
+
+.education-heading-dot:nth-child(2) {
+  animation-delay: 0.5s;
+  background: var(--color-secondary);
+}
+
+.education-heading-dot:nth-child(3) {
+  animation-delay: 1s;
+  background: var(--color-accent);
+}
+
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
+
+.education-heading-glow {
+  position: absolute;
+  inset: -10px;
+  background: radial-gradient(ellipse at center, var(--color-primary) 0%, transparent 70%);
+  opacity: 0.1;
+  filter: blur(10px);
+  z-index: -1;
+  animation: heading-glow-pulse 6s ease-in-out infinite;
+}
+
+@keyframes heading-glow-pulse {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(1.1); }
+}
+
+.education-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-alt);
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Futuristic Timeline */
+.education-timeline-container {
+  position: relative;
+  padding-left: 2rem;
+  margin-left: 1rem;
+}
+
+.education-timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+  opacity: 0.5;
+}
+
+.education-timeline-line::before,
+.education-timeline-line::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+.education-timeline-line::before {
+  top: -6px;
+}
+
+.education-timeline-line::after {
+  bottom: -6px;
+  background: var(--color-secondary);
+  box-shadow: 0 0 10px var(--color-secondary);
+}
+
+.education-timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.education-timeline-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education-timeline-dot {
+  position: absolute;
+  top: 1.5rem;
+  left: -2.5rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+  z-index: 1;
+}
+
+.education-timeline-dot::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  opacity: 0.5;
+  animation: dot-pulse 3s ease-in-out infinite;
+}
+
+.education-timeline-card {
+  position: relative;
+  background: rgba(19, 19, 31, 0.7);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.education-timeline-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+}
+
+.education-timeline-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .education-timeline-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.education-timeline-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.education-timeline-date {
+  display: inline-flex;
+  padding: 0.25rem 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 30px;
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.education-timeline-subtitle {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.education-timeline-content {
+  font-size: 0.9rem;
+  color: var(--color-text-alt);
+  line-height: 1.6;
+}
+
+.education-timeline-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, var(--color-primary) 0%, transparent 70%);
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.education-timeline-card:hover .education-timeline-glow {
+  opacity: 0.1;
+}
+
+/* Futuristic Achievement Cards */
+.education-achievement-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.education-achievement-card {
+  position: relative;
+  background: rgba(19, 19, 31, 0.7);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.education-achievement-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education-achievement-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.2);
+}
+
+.education-achievement-icon-container {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(236, 72, 153, 0.1);
+  transition: all 0.3s ease;
+}
+
+.education-achievement-card:hover .education-achievement-icon-container {
+  background: rgba(236, 72, 153, 0.2);
+}
+
+.education-achievement-icon {
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  transition: all 0.3s ease;
+}
+
+.education-achievement-card:hover .education-achievement-icon {
+  transform: scale(1.1);
+}
+
+.education-achievement-content {
+  flex: 1;
+}
+
+.education-achievement-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.education-achievement-subtitle {
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.education-achievement-description {
+  font-size: 0.9rem;
+  color: var(--color-text-alt);
+  line-height: 1.6;
+}
+
+.education-achievement-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, var(--color-secondary) 0%, transparent 70%);
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.education-achievement-card:hover .education-achievement-glow {
+  opacity: 0.1;
+}
+
+/* Futuristic Goals Section */
+.education-goals-container {
+  margin-top: 4rem;
+}
+
+.education-goals-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.education-goals-title::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.education-goals-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .education-goals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.education-goal-card {
+  position: relative;
+  background: rgba(19, 19, 31, 0.7);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.education-goal-card.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.education-goal-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+.education-goal-icon-container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.1);
+  margin: 0 auto 1rem;
+  transition: all 0.3s ease;
+}
+
+.education-goal-card:hover .education-goal-icon-container {
+  background: rgba(139, 92, 246, 0.2);
+  transform: rotate(10deg);
+}
+
+.education-goal-icon {
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  transition: all 0.3s ease;
+}
+
+.education-goal-card:hover .education-goal-icon {
+  transform: scale(1.1);
+}
+
+.education-goal-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.education-goal-description {
+  font-size: 0.9rem;
+  color: var(--color-text-alt);
+  line-height: 1.6;
+}
+
+.education-goal-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, var(--color-accent) 0%, transparent 70%);
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.education-goal-card:hover .education-goal-glow {
+  opacity: 0.1;
+}
+
+/* Floating particles */
+.education-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.education-particle {
+  position: absolute;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: float-particle 15s linear infinite;
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+/* Hover interaction effects */
+.education-hover-interaction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.3), transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.education-timeline-card:hover .education-hover-interaction,
+.education-achievement-card:hover .education-hover-interaction,
+.education-goal-card:hover .education-hover-interaction {
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 0.5;
+}
+
+/* Shine effect */
+.education-shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.05) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translateX(-100%);
+  transition: transform 0s;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.education-timeline-card:hover .education-shine,
+.education-achievement-card:hover .education-shine,
+.education-goal-card:hover .education-shine {
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}

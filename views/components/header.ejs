@@ -1,327 +1,3814 @@
-<header class="fixed top-0 left-0 w-full glass z-50 transition-all duration-500">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <a href="#hero" class="group flex items-center">
-      <div class="relative overflow-hidden w-10 h-10 rounded-lg mr-3 bg-gradient-to-r from-primary via-secondary to-accent bg-[length:200%_auto] group-hover:shadow-lg transition-all duration-500">
-        <span class="absolute inset-0 flex items-center justify-center text-white font-bold text-xl">P</span>
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-500">
+  <!-- Ultra-Modern Futuristic Header Background -->
+  <div class="absolute inset-0 overflow-hidden">
+    <!-- Animated gradient background -->
+    <div class="header-bg-gradient"></div>
+
+    <!-- Animated grid lines -->
+    <div class="header-grid-container">
+      <div class="header-grid-horizontal"></div>
+      <div class="header-grid-vertical"></div>
+    </div>
+
+    <!-- Animated particles -->
+    <div class="header-particles" id="header-particles"></div>
+
+    <!-- Glowing border -->
+    <div class="header-border-glow"></div>
+
+    <!-- Circuit pattern overlay -->
+    <div class="header-circuit-pattern"></div>
+
+    <!-- Noise texture overlay -->
+    <div class="header-noise"></div>
+  </div>
+
+  <div class="container mx-auto px-6 py-4 relative z-10">
+    <div class="flex justify-between items-center">
+      <!-- Ultra-Modern Cyberpunk Logo -->
+      <a href="#hero" class="cyber-logo">
+        <!-- Holographic container -->
+        <div class="cyber-logo-container">
+          <!-- Holographic emblem -->
+          <div class="cyber-logo-emblem">
+            <!-- Rotating rings -->
+            <div class="cyber-logo-ring cyber-logo-ring-1"></div>
+            <div class="cyber-logo-ring cyber-logo-ring-2"></div>
+            <div class="cyber-logo-ring cyber-logo-ring-3"></div>
+
+            <!-- Core hexagon with letter -->
+            <div class="cyber-logo-hexagon">
+              <div class="cyber-logo-hexagon-inner">
+                <span class="cyber-logo-letter">P</span>
+              </div>
+              <div class="cyber-logo-hexagon-glow"></div>
+            </div>
+
+            <!-- Energy beams -->
+            <div class="cyber-logo-beams">
+              <div class="cyber-logo-beam cyber-logo-beam-1"></div>
+              <div class="cyber-logo-beam cyber-logo-beam-2"></div>
+              <div class="cyber-logo-beam cyber-logo-beam-3"></div>
+            </div>
+
+            <!-- Floating particles -->
+            <div class="cyber-logo-particles" id="cyber-logo-particles"></div>
+          </div>
+        </div>
+
+        <!-- Text with glitch effect -->
+        <div class="cyber-logo-text">
+          <!-- Name with glitch effect -->
+          <div class="cyber-name-container">
+            <div class="cyber-name-glitch" data-text="Prusotam">Prusotam</div>
+            <div class="cyber-name-scanner"></div>
+          </div>
+
+          <!-- Animated title with typing effect -->
+          <div class="cyber-title-container">
+            <div class="cyber-title-prefix">&lt;</div>
+            <div class="cyber-title" id="cyber-title">Web Developer</div>
+            <div class="cyber-title-suffix">/&gt;</div>
+            <div class="cyber-title-cursor"></div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Cyberpunk Navigation (Desktop Only) -->
+      <nav class="hidden lg:block cyber-nav">
+        <!-- Holographic backdrop -->
+        <div class="cyber-nav-backdrop">
+          <div class="cyber-nav-backdrop-glow"></div>
+          <div class="cyber-nav-backdrop-grid"></div>
+        </div>
+
+        <!-- Navigation links container -->
+        <div class="cyber-nav-links">
+          <!-- Home link -->
+          <a href="#hero" class="cyber-nav-link" data-section="hero">
+            <div class="cyber-nav-link-content">
+              <!-- Icon with holographic effect -->
+              <div class="cyber-nav-icon">
+                <i class="fas fa-home"></i>
+                <div class="cyber-nav-icon-hologram"></div>
+              </div>
+
+              <!-- Text with scan effect -->
+              <div class="cyber-nav-text-container">
+                <span class="cyber-nav-text">Home</span>
+                <span class="cyber-nav-text-scan"></span>
+              </div>
+            </div>
+
+            <!-- Animated indicator -->
+            <div class="cyber-nav-indicator">
+              <div class="cyber-nav-indicator-line"></div>
+              <div class="cyber-nav-indicator-glow"></div>
+            </div>
+          </a>
+
+          <!-- About link -->
+          <a href="#about" class="cyber-nav-link" data-section="about">
+            <div class="cyber-nav-link-content">
+              <div class="cyber-nav-icon">
+                <i class="fas fa-user"></i>
+                <div class="cyber-nav-icon-hologram"></div>
+              </div>
+              <div class="cyber-nav-text-container">
+                <span class="cyber-nav-text">About</span>
+                <span class="cyber-nav-text-scan"></span>
+              </div>
+            </div>
+            <div class="cyber-nav-indicator">
+              <div class="cyber-nav-indicator-line"></div>
+              <div class="cyber-nav-indicator-glow"></div>
+            </div>
+          </a>
+
+          <!-- Skills link -->
+          <a href="#skills" class="cyber-nav-link" data-section="skills">
+            <div class="cyber-nav-link-content">
+              <div class="cyber-nav-icon">
+                <i class="fas fa-code"></i>
+                <div class="cyber-nav-icon-hologram"></div>
+              </div>
+              <div class="cyber-nav-text-container">
+                <span class="cyber-nav-text">Skills</span>
+                <span class="cyber-nav-text-scan"></span>
+              </div>
+            </div>
+            <div class="cyber-nav-indicator">
+              <div class="cyber-nav-indicator-line"></div>
+              <div class="cyber-nav-indicator-glow"></div>
+            </div>
+          </a>
+
+          <!-- Projects link -->
+          <a href="#projects" class="cyber-nav-link" data-section="projects">
+            <div class="cyber-nav-link-content">
+              <div class="cyber-nav-icon">
+                <i class="fas fa-project-diagram"></i>
+                <div class="cyber-nav-icon-hologram"></div>
+              </div>
+              <div class="cyber-nav-text-container">
+                <span class="cyber-nav-text">Projects</span>
+                <span class="cyber-nav-text-scan"></span>
+              </div>
+            </div>
+            <div class="cyber-nav-indicator">
+              <div class="cyber-nav-indicator-line"></div>
+              <div class="cyber-nav-indicator-glow"></div>
+            </div>
+          </a>
+
+          <!-- Education link -->
+          <a href="#education" class="cyber-nav-link" data-section="education">
+            <div class="cyber-nav-link-content">
+              <div class="cyber-nav-icon">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="cyber-nav-icon-hologram"></div>
+              </div>
+              <div class="cyber-nav-text-container">
+                <span class="cyber-nav-text">Education</span>
+                <span class="cyber-nav-text-scan"></span>
+              </div>
+            </div>
+            <div class="cyber-nav-indicator">
+              <div class="cyber-nav-indicator-line"></div>
+              <div class="cyber-nav-indicator-glow"></div>
+            </div>
+          </a>
+
+          <!-- Contact link -->
+          <a href="#contact" class="cyber-nav-link hidden" data-section="contact">
+            <div class="cyber-nav-link-content">
+              <div class="cyber-nav-icon">
+                <i class="fas fa-envelope"></i>
+                <div class="cyber-nav-icon-hologram"></div>
+              </div>
+              <div class="cyber-nav-text-container">
+                <span class="cyber-nav-text">Contact</span>
+                <span class="cyber-nav-text-scan"></span>
+              </div>
+            </div>
+            <div class="cyber-nav-indicator">
+              <div class="cyber-nav-indicator-line"></div>
+              <div class="cyber-nav-indicator-glow"></div>
+            </div>
+          </a>
+
+          <!-- Active link highlight effect -->
+          <div class="cyber-nav-active-highlight" id="cyber-nav-highlight"></div>
+        </div>
+      </nav>
+
+      <!-- Cyberpunk Header Controls -->
+      <div class="flex items-center space-x-5">
+        <!-- Cyberpunk Social Icons (Hidden on mobile) -->
+        <div class="hidden md:flex cyber-social">
+          <!-- Holographic container -->
+          <div class="cyber-social-container">
+            <!-- Backdrop with glow and grid -->
+            <div class="cyber-social-backdrop">
+              <div class="cyber-social-backdrop-glow"></div>
+              <div class="cyber-social-backdrop-grid"></div>
+            </div>
+
+            <!-- GitHub icon -->
+            <a href="https://github.com/prusotamydv" target="_blank" class="cyber-social-icon" aria-label="GitHub">
+              <!-- Icon with energy field -->
+              <div class="cyber-social-icon-wrapper">
+                <i class="fab fa-github"></i>
+                <div class="cyber-social-icon-energy"></div>
+              </div>
+
+              <!-- Pulsing ring -->
+              <div class="cyber-social-icon-ring"></div>
+
+              <!-- Hover glow -->
+              <div class="cyber-social-icon-glow"></div>
+            </a>
+
+            <!-- LinkedIn icon -->
+            <a href="https://linkedin.com/in/prusotam" target="_blank" class="cyber-social-icon" aria-label="LinkedIn">
+              <div class="cyber-social-icon-wrapper">
+                <i class="fab fa-linkedin-in"></i>
+                <div class="cyber-social-icon-energy"></div>
+              </div>
+              <div class="cyber-social-icon-ring"></div>
+              <div class="cyber-social-icon-glow"></div>
+            </a>
+
+            <!-- Email icon -->
+            <a href="mailto:your-email@example.com" class="cyber-social-icon" aria-label="Email">
+              <div class="cyber-social-icon-wrapper">
+                <i class="fas fa-envelope"></i>
+                <div class="cyber-social-icon-energy"></div>
+              </div>
+              <div class="cyber-social-icon-ring"></div>
+              <div class="cyber-social-icon-glow"></div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cyberpunk Theme Toggle -->
+        <button id="theme-toggle" class="cyber-theme-toggle" aria-label="Toggle Dark Mode">
+          <!-- Holographic container -->
+          <div class="cyber-theme-toggle-container">
+            <!-- Animated background -->
+            <div class="cyber-theme-toggle-bg">
+              <div class="cyber-theme-toggle-stars"></div>
+              <div class="cyber-theme-toggle-sun-rays"></div>
+            </div>
+
+            <!-- Toggle track -->
+            <div class="cyber-theme-toggle-track">
+              <div class="cyber-theme-toggle-track-glow"></div>
+
+              <!-- Toggle thumb with 3D effect -->
+              <div class="cyber-theme-toggle-thumb">
+                <!-- Sun icon (visible in dark mode) -->
+                <div class="cyber-theme-toggle-sun">
+                  <div class="cyber-theme-toggle-sun-core"></div>
+                  <div class="cyber-theme-toggle-sun-ray cyber-theme-toggle-sun-ray-1"></div>
+                  <div class="cyber-theme-toggle-sun-ray cyber-theme-toggle-sun-ray-2"></div>
+                  <div class="cyber-theme-toggle-sun-ray cyber-theme-toggle-sun-ray-3"></div>
+                  <div class="cyber-theme-toggle-sun-ray cyber-theme-toggle-sun-ray-4"></div>
+                </div>
+
+                <!-- Moon icon (visible in light mode) -->
+                <div class="cyber-theme-toggle-moon">
+                  <div class="cyber-theme-toggle-moon-body"></div>
+                  <div class="cyber-theme-toggle-moon-crater cyber-theme-toggle-moon-crater-1"></div>
+                  <div class="cyber-theme-toggle-moon-crater cyber-theme-toggle-moon-crater-2"></div>
+                  <div class="cyber-theme-toggle-moon-crater cyber-theme-toggle-moon-crater-3"></div>
+                </div>
+
+                <!-- Holographic glow -->
+                <div class="cyber-theme-toggle-thumb-glow"></div>
+              </div>
+            </div>
+          </div>
+        </button>
+
+        <!-- Futuristic Mobile Menu Button (Only visible on mobile) -->
+        <button id="mobile-menu-button" class="mobile-menu-button sm:flex md:flex lg:hidden fixed top-4 right-4 z-[9999]" aria-label="Menu">
+          <!-- Simple container with clean design -->
+          <div class="mobile-menu-button-container">
+            <!-- Hamburger icon -->
+            <div class="mobile-menu-button-hamburger">
+              <span class="mobile-menu-button-line mobile-menu-button-line-1"></span>
+              <span class="mobile-menu-button-line mobile-menu-button-line-2"></span>
+              <span class="mobile-menu-button-line mobile-menu-button-line-3"></span>
+            </div>
+          </div>
+        </button>
       </div>
-      <div>
-        <span class="text-2xl font-bold font-display gradient-text">Prusotam</span>
-        <span class="block text-xs uppercase tracking-widest mt-0.5 text-gray-400">Web Developer</span>
-      </div>
-    </a>
-    
-    <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex space-x-1">
-      <a href="#hero" class="nav-link" data-section="hero">Home</a>
-      <a href="#about" class="nav-link" data-section="about">About</a>
-      <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-      <a href="#projects" class="nav-link" data-section="projects">Projects</a>
-      <a href="#education" class="nav-link" data-section="education">Education</a>
-      <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-    </nav>
-    
-    <div class="flex items-center space-x-5">
-      <!-- Social Icons -->
-      <div class="hidden md:flex space-x-3">
-        <a href="https://github.com/prusotamydv" target="_blank" class="social-icon" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/prusotam" target="_blank" class="social-icon" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-      
-      <!-- Dark/Light Mode Toggle -->
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      </button>
-      
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-button" class="hamburger lg:hidden" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </div>
   </div>
-  
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 bg-black bg-opacity-95 z-40 flex-col justify-center items-center hidden transition-all duration-500 backdrop-blur-md">
-    <nav class="flex flex-col items-center justify-center space-y-8 h-full text-4xl font-display">
-      <a href="#hero" class="mobile-nav-link" data-section="hero">Home</a>
-      <a href="#about" class="mobile-nav-link" data-section="about">About</a>
-      <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
-      <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
-      <a href="#education" class="mobile-nav-link" data-section="education">Education</a>
-      <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
-    </nav>
-    
-    <!-- Social Icons for Mobile -->
-    <div class="flex space-x-6 mb-12">
-      <a href="https://github.com/prusotamydv" target="_blank" class="text-2xl hover:text-primary transition-colors duration-300">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/prusotam" target="_blank" class="text-2xl hover:text-primary transition-colors duration-300">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a href="mailto:your-email@example.com" class="text-2xl hover:text-primary transition-colors duration-300">
-        <i class="fas fa-envelope"></i>
-      </a>
+
+  <!-- Futuristic Mobile Menu (Only visible on mobile) -->
+  <div id="mobile-menu" class="fixed inset-0 z-[9000] hidden lg:hidden">
+    <!-- Futuristic backdrop with effects -->
+    <div class="mobile-menu-backdrop"></div>
+
+    <!-- Glowing top border -->
+    <div class="mobile-menu-top-border"></div>
+
+    <!-- Animated scan line effect -->
+    <div class="mobile-menu-scanline"></div>
+
+    <!-- Animated particles -->
+    <div class="mobile-menu-particles"></div>
+
+    <!-- Menu content container -->
+    <div class="relative h-full flex flex-col pt-20 px-6">
+      <!-- Futuristic logo for mobile menu -->
+      <div class="mobile-menu-logo mb-10 flex justify-center">
+        <div class="mobile-menu-logo-container">
+          <div class="mobile-menu-logo-hexagon"></div>
+          <div class="mobile-menu-logo-letter">P</div>
+          <div class="mobile-menu-logo-glow"></div>
+        </div>
+      </div>
+
+      <!-- Clean mobile navigation links -->
+      <nav class="mobile-menu-nav">
+        <!-- Home link -->
+        <a href="#hero" class="mobile-menu-link" data-section="hero">
+          <div class="mobile-menu-link-circuit"></div>
+          <span class="mobile-menu-link-number">01</span>
+          <span class="mobile-menu-link-text">Home</span>
+        </a>
+
+        <!-- About link -->
+        <a href="#about" class="mobile-menu-link" data-section="about">
+          <div class="mobile-menu-link-circuit"></div>
+          <span class="mobile-menu-link-number">02</span>
+          <span class="mobile-menu-link-text">About</span>
+        </a>
+
+        <!-- Skills link -->
+        <a href="#skills" class="mobile-menu-link" data-section="skills">
+          <div class="mobile-menu-link-circuit"></div>
+          <span class="mobile-menu-link-number">03</span>
+          <span class="mobile-menu-link-text">Skills</span>
+        </a>
+
+        <!-- Projects link -->
+        <a href="#projects" class="mobile-menu-link" data-section="projects">
+          <div class="mobile-menu-link-circuit"></div>
+          <span class="mobile-menu-link-number">04</span>
+          <span class="mobile-menu-link-text">Projects</span>
+        </a>
+
+        <!-- Education link -->
+        <a href="#education" class="mobile-menu-link" data-section="education">
+          <div class="mobile-menu-link-circuit"></div>
+          <span class="mobile-menu-link-number">05</span>
+          <span class="mobile-menu-link-text">Education</span>
+        </a>
+
+        <!-- Contact link -->
+        <a href="#contact" class="mobile-menu-link" data-section="contact">
+          <div class="mobile-menu-link-circuit"></div>
+          <span class="mobile-menu-link-number">06</span>
+          <span class="mobile-menu-link-text">Contact</span>
+        </a>
+      </nav>
+
+      <!-- Simple mobile social icons -->
+      <div class="mobile-menu-social mt-10">
+        <div class="mobile-menu-social-title mb-4 text-center">
+          <span class="text-white opacity-80">Connect</span>
+          <span class="mobile-menu-social-highlight ml-2">With Me</span>
+        </div>
+
+        <!-- Social icons container -->
+        <div class="mobile-menu-social-icons flex justify-center gap-6">
+          <!-- GitHub icon -->
+          <a href="https://github.com/prusotamydv" target="_blank" class="mobile-menu-social-icon" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <!-- LinkedIn icon -->
+          <a href="https://linkedin.com/in/prusotam" target="_blank" class="mobile-menu-social-icon" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <!-- Email icon -->
+          <a href="mailto:your-email@example.com" class="mobile-menu-social-icon" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
 <style>
-  /* Navigation link hover effects */
-  .nav-link {
-    position: relative;
-    padding: 0.75rem 1.25rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    overflow: hidden;
+  /* Cyberpunk Futuristic Header Styles */
+
+  /* Header Background Effects */
+  .header-bg-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(125deg,
+      rgba(10, 10, 20, 0.95) 0%,
+      rgba(30, 30, 50, 0.85) 40%,
+      rgba(15, 15, 35, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+    opacity: 0.9;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: gradientShift 15s ease infinite alternate;
   }
-  
-  .nav-link::before {
-    content: '';
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Grid Lines Animation */
+  .header-grid-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0.15;
+  }
+
+  .header-grid-horizontal {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 19px,
+      rgba(99, 102, 241, 0.5) 19px,
+      rgba(99, 102, 241, 0.5) 20px
+    );
+    animation: gridMoveVertical 60s linear infinite;
+  }
+
+  .header-grid-vertical {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 19px,
+      rgba(236, 72, 153, 0.5) 19px,
+      rgba(236, 72, 153, 0.5) 20px
+    );
+    animation: gridMoveHorizontal 60s linear infinite;
+  }
+
+  @keyframes gridMoveVertical {
+    from { transform: translateY(0); }
+    to { transform: translateY(20px); }
+  }
+
+  @keyframes gridMoveHorizontal {
+    from { transform: translateX(0); }
+    to { transform: translateX(20px); }
+  }
+
+  /* Animated Particles */
+  .header-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  /* Glowing Border */
+  .header-border-glow {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(99, 102, 241, 0.7),
+      rgba(236, 72, 153, 0.7),
+      rgba(139, 92, 246, 0.7),
+      transparent);
+    filter: blur(1px);
+    animation: borderPulse 4s ease-in-out infinite alternate;
   }
-  
-  .nav-link:hover::before,
-  .nav-link.active::before {
-    width: 80%;
+
+  @keyframes borderPulse {
+    0% { opacity: 0.3; filter: blur(1px); }
+    100% { opacity: 0.7; filter: blur(2px); }
   }
-  
-  .nav-link.active {
-    color: var(--color-primary);
+
+  /* Circuit Pattern */
+  .header-circuit-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,10 L30,10 L30,30 L50,30 L50,50 L70,50 L70,70 L90,70' stroke='rgba(99, 102, 241, 0.15)' fill='none' stroke-width='1'/%3E%3Cpath d='M90,10 L70,10 L70,30 L50,30 L50,50 L30,50 L30,70 L10,70' stroke='rgba(236, 72, 153, 0.15)' fill='none' stroke-width='1'/%3E%3C/svg%3E");
+    background-size: 100px 100px;
+    opacity: 0.3;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   }
-  
-  /* Social icons hover effect */
-  .social-icon {
-    display: inline-flex;
+
+  /* Noise Texture */
+  .header-noise {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+  }
+
+  /* Cyberpunk Logo Styles */
+  .cyber-logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Logo Container */
+  .cyber-logo-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  /* Holographic Emblem */
+  .cyber-logo-emblem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Rotating Rings */
+  .cyber-logo-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+  }
+
+  .cyber-logo-ring-1 {
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    animation: ringRotate1 10s linear infinite;
+  }
+
+  .cyber-logo-ring-2 {
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 1px solid rgba(236, 72, 153, 0.3);
+    animation: ringRotate2 15s linear infinite;
+  }
+
+  .cyber-logo-ring-3 {
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    animation: ringRotate3 20s linear infinite;
+  }
+
+  @keyframes ringRotate1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes ringRotate2 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+  }
+
+  @keyframes ringRotate3 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Core Hexagon */
+  .cyber-logo-hexagon {
+    position: absolute;
+    inset: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: rgba(99, 102, 241, 0.1);
-    color: var(--color-text);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    animation: hexagonPulse 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes hexagonPulse {
+    0% { transform: scale(0.95); filter: brightness(0.9); }
+    100% { transform: scale(1.05); filter: brightness(1.1); }
+  }
+
+  .cyber-logo-hexagon-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: rgba(10, 10, 20, 0.8);
+    z-index: 1;
+  }
+
+  .cyber-logo-letter {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--font-display);
+    color: white;
+    text-shadow: 0 0 10px var(--color-primary);
+    animation: letterGlow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes letterGlow {
+    0% { text-shadow: 0 0 5px var(--color-primary); }
+    100% { text-shadow: 0 0 15px var(--color-primary), 0 0 30px var(--color-secondary); }
+  }
+
+  .cyber-logo-hexagon-glow {
+    position: absolute;
+    inset: -5px;
+    background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+    opacity: 0.5;
+    filter: blur(10px);
+    animation: glowPulse 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowPulse {
+    0% { opacity: 0.3; filter: blur(8px); }
+    100% { opacity: 0.6; filter: blur(12px); }
+  }
+
+  /* Energy Beams */
+  .cyber-logo-beams {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .cyber-logo-beam {
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to top, var(--color-primary), transparent);
+    transform-origin: bottom center;
+    opacity: 0.7;
+    filter: blur(1px);
+  }
+
+  .cyber-logo-beam-1 {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-30deg);
+    animation: beamFlicker1 4s ease-in-out infinite;
+  }
+
+  .cyber-logo-beam-2 {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(30deg);
+    animation: beamFlicker2 5s ease-in-out infinite;
+  }
+
+  .cyber-logo-beam-3 {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    animation: beamFlicker3 6s ease-in-out infinite;
+  }
+
+  @keyframes beamFlicker1 {
+    0%, 100% { opacity: 0.3; height: 30px; }
+    50% { opacity: 0.7; height: 40px; }
+  }
+
+  @keyframes beamFlicker2 {
+    0%, 100% { opacity: 0.5; height: 35px; }
+    50% { opacity: 0.2; height: 25px; }
+  }
+
+  @keyframes beamFlicker3 {
+    0%, 100% { opacity: 0.2; height: 20px; }
+    50% { opacity: 0.6; height: 30px; }
+  }
+
+  /* Glitch Effect */
+  .cyber-logo-glitch-effect {
+    position: absolute;
+    inset: 0;
+    background: rgba(236, 72, 153, 0.5);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    opacity: 0;
+    mix-blend-mode: overlay;
+    animation: glitchEffect 5s ease-in-out infinite;
+  }
+
+  @keyframes glitchEffect {
+    0%, 5%, 10%, 100% { opacity: 0; transform: translateX(0); }
+    2%, 8% { opacity: 0.5; transform: translateX(-2px); }
+    3%, 9% { opacity: 0.5; transform: translateX(2px); }
+  }
+
+  /* Logo Text */
+  .cyber-logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Name with Glitch Effect */
+  .cyber-name-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cyber-name-glitch {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-display);
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+  }
+
+  .cyber-name-glitch::before,
+  .cyber-name-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .cyber-name-glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 rgba(236, 72, 153, 0.7);
+    animation: glitch-1 2s infinite linear alternate-reverse;
+  }
+
+  .cyber-name-glitch::after {
+    left: -2px;
+    text-shadow: -1px 0 rgba(99, 102, 241, 0.7);
+    animation: glitch-2 2s infinite linear alternate-reverse;
+  }
+
+  @keyframes glitch-1 {
+    0%, 100% { clip-path: inset(0 0 98% 0); }
+    20% { clip-path: inset(33% 0 33% 0); }
+    40% { clip-path: inset(50% 0 43% 0); }
+    60% { clip-path: inset(33% 0 66% 0); }
+    80% { clip-path: inset(66% 0 33% 0); }
+  }
+
+  @keyframes glitch-2 {
+    0%, 100% { clip-path: inset(0 0 98% 0); }
+    20% { clip-path: inset(33% 0 33% 0); }
+    40% { clip-path: inset(33% 0 66% 0); }
+    60% { clip-path: inset(66% 0 33% 0); }
+    80% { clip-path: inset(33% 0 33% 0); }
+  }
+
+  .cyber-name-scanner {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent 100%);
+    animation: scannerMove 3s ease-in-out infinite;
+  }
+
+  @keyframes scannerMove {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
+  /* Title with Typing Effect */
+  .cyber-title-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+  }
+
+  .cyber-title-prefix,
+  .cyber-title-suffix {
+    font-family: monospace;
+    color: var(--color-primary);
+    font-size: 0.7rem;
+    opacity: 0.8;
+  }
+
+  .cyber-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 2px;
+    font-family: monospace;
+  }
+
+  .cyber-title-cursor {
+    width: 2px;
+    height: 14px;
+    background-color: var(--color-primary);
+    margin-left: 2px;
+    animation: cursorBlink 1s step-end infinite;
+  }
+
+  @keyframes cursorBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* Cyberpunk Navigation Styles */
+  .cyber-nav {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Navigation Backdrop */
+  .cyber-nav-backdrop {
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    right: -15px;
+    bottom: -10px;
+    border-radius: 8px;
+    background: rgba(10, 10, 20, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .cyber-nav-backdrop-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(99, 102, 241, 0.1) 0%,
+      transparent 70%
+    );
+    opacity: 0.5;
+  }
+
+  .cyber-nav-backdrop-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.3;
+  }
+
+  /* Navigation Links Container */
+  .cyber-nav-links {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  /* Navigation Link */
+  .cyber-nav-link {
+    position: relative;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .cyber-nav-link:hover,
+  .cyber-nav-link.active {
+    background: rgba(99, 102, 241, 0.1);
+  }
+
+  /* Link Content */
+  .cyber-nav-link-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 1;
+  }
+
+  /* Icon with Holographic Effect */
+  .cyber-nav-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
     transition: all 0.3s ease;
   }
-  
-  .social-icon:hover {
-    background-color: var(--color-primary);
+
+  .cyber-nav-link:hover .cyber-nav-icon,
+  .cyber-nav-link.active .cyber-nav-icon {
     color: white;
-    transform: translateY(-3px);
+    text-shadow: 0 0 10px var(--color-primary);
   }
-  
-  /* Theme toggle button */
-  .theme-toggle {
+
+  .cyber-nav-icon-hologram {
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+    opacity: 0;
+    filter: blur(5px);
+    transition: opacity 0.3s ease;
+  }
+
+  .cyber-nav-link:hover .cyber-nav-icon-hologram,
+  .cyber-nav-link.active .cyber-nav-icon-hologram {
+    opacity: 0.3;
+    animation: pulseHologram 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulseHologram {
+    0% { opacity: 0.2; transform: scale(0.9); }
+    100% { opacity: 0.4; transform: scale(1.1); }
+  }
+
+  /* Text with Scan Effect */
+  .cyber-nav-text-container {
     position: relative;
-    width: 40px;
-    height: 40px;
+    overflow: hidden;
+  }
+
+  .cyber-nav-text {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+  }
+
+  .cyber-nav-link:hover .cyber-nav-text,
+  .cyber-nav-link.active .cyber-nav-text {
+    color: white;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  }
+
+  .cyber-nav-text-scan {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent 100%);
+    transition: left 0.3s ease;
+  }
+
+  .cyber-nav-link:hover .cyber-nav-text-scan {
+    animation: textScan 1.5s ease-in-out infinite;
+  }
+
+  @keyframes textScan {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
+  /* Animated Indicator */
+  .cyber-nav-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    overflow: hidden;
+  }
+
+  .cyber-nav-indicator-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .cyber-nav-link:hover .cyber-nav-indicator-line,
+  .cyber-nav-link.active .cyber-nav-indicator-line {
+    transform: scaleX(1);
+  }
+
+  .cyber-nav-indicator-glow {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--color-primary);
+    filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .cyber-nav-link:hover .cyber-nav-indicator-glow,
+  .cyber-nav-link.active .cyber-nav-indicator-glow {
+    opacity: 0.5;
+  }
+
+  /* Active Link Highlight */
+  .cyber-nav-active-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg,
+      rgba(99, 102, 241, 0.1) 0%,
+      rgba(236, 72, 153, 0.1) 100%);
+    border-radius: 4px;
+    z-index: 0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+  }
+
+  /* Cyberpunk Social Icons */
+  .cyber-social {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Social Container */
+  .cyber-social-container {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+
+  /* Social Backdrop */
+  .cyber-social-backdrop {
+    position: absolute;
+    inset: -5px;
+    border-radius: 8px;
+    background: rgba(10, 10, 20, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .cyber-social-backdrop-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(99, 102, 241, 0.1) 0%,
+      transparent 70%
+    );
+    opacity: 0.5;
+  }
+
+  .cyber-social-backdrop-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.3;
+  }
+
+  /* Social Icon */
+  .cyber-social-icon {
+    position: relative;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: rgba(99, 102, 241, 0.1);
-    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+  }
+
+  /* Icon Wrapper */
+  .cyber-social-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  /* Energy Field */
+  .cyber-social-icon-energy {
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+    opacity: 0;
+    filter: blur(5px);
     transition: all 0.3s ease;
   }
-  
-  .theme-toggle:hover {
-    background-color: rgba(99, 102, 241, 0.2);
+
+  .cyber-social-icon:hover .cyber-social-icon-energy {
+    opacity: 0.3;
+    animation: energyPulse 2s ease-in-out infinite alternate;
   }
-  
-  .sun-icon,
-  .moon-icon {
+
+  @keyframes energyPulse {
+    0% { opacity: 0.2; transform: scale(0.9); }
+    100% { opacity: 0.4; transform: scale(1.1); }
+  }
+
+  /* Pulsing Ring */
+  .cyber-social-icon-ring {
     position: absolute;
-    transition: opacity 0.3s ease, transform 0.5s ease;
-  }
-  
-  .dark .sun-icon {
-    opacity: 1;
-    transform: rotate(0);
-  }
-  
-  .dark .moon-icon {
+    inset: 0;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
     opacity: 0;
-    transform: rotate(90deg);
+    transition: all 0.3s ease;
   }
-  
-  .sun-icon {
+
+  .cyber-social-icon:hover .cyber-social-icon-ring {
+    opacity: 0.5;
+    animation: ringExpand 1.5s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  }
+
+  @keyframes ringExpand {
+    0% { transform: scale(1); opacity: 0.5; }
+    100% { transform: scale(1.8); opacity: 0; }
+  }
+
+  /* Hover Glow */
+  .cyber-social-icon-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--color-primary);
     opacity: 0;
-    transform: rotate(-90deg);
+    filter: blur(5px);
+    transition: all 0.3s ease;
   }
-  
-  .moon-icon {
-    opacity: 1;
-    transform: rotate(0);
+
+  .cyber-social-icon:hover {
+    transform: translateY(-3px);
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
-  
-  /* Hamburger menu animation */
-  .hamburger {
-    width: 30px;
-    height: 24px;
+
+  .cyber-social-icon:hover .cyber-social-icon-glow {
+    opacity: 0.3;
+  }
+
+  /* Cyberpunk Theme Toggle */
+  .cyber-theme-toggle {
     position: relative;
+    width: 60px;
+    height: 30px;
     cursor: pointer;
+    z-index: 2;
+  }
+
+  /* Toggle Container */
+  .cyber-theme-toggle-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  /* Animated Background */
+  .cyber-theme-toggle-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+      rgba(10, 10, 20, 0.8),
+      rgba(30, 41, 59, 0.8));
+    border-radius: 15px;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .dark .cyber-theme-toggle-bg {
+    background: linear-gradient(to right,
+      rgba(30, 41, 59, 0.8),
+      rgba(15, 23, 42, 0.8));
+  }
+
+  /* Stars (visible in light mode) */
+  .cyber-theme-toggle-stars {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(1px 1px at 10px 10px, rgba(255, 255, 255, 0.8) 50%, transparent 100%),
+      radial-gradient(1px 1px at 20px 20px, rgba(255, 255, 255, 0.8) 50%, transparent 100%),
+      radial-gradient(1px 1px at 30px 5px, rgba(255, 255, 255, 0.8) 50%, transparent 100%),
+      radial-gradient(1px 1px at 40px 15px, rgba(255, 255, 255, 0.8) 50%, transparent 100%),
+      radial-gradient(1px 1px at 50px 10px, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .dark .cyber-theme-toggle-stars {
+    opacity: 0.5;
+    animation: twinkle 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+
+  /* Sun Rays (visible in dark mode) */
+  .cyber-theme-toggle-sun-rays {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 75% 50%, rgba(245, 158, 11, 0.5) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .cyber-theme-toggle-sun-rays::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 75% 50%, rgba(245, 158, 11, 0.3) 0%, transparent 40%);
+    animation: raysPulse 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes raysPulse {
+    0% { opacity: 0.5; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1.05); }
+  }
+
+  /* Toggle Track */
+  .cyber-theme-toggle-track {
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .cyber-theme-toggle-track-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5) inset;
+    opacity: 0.5;
+  }
+
+  /* Toggle Thumb */
+  .cyber-theme-toggle-thumb {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+
+  .dark .cyber-theme-toggle-thumb {
+    transform: translateX(30px);
+    background: #1e293b;
+  }
+
+  /* Sun Icon */
+  .cyber-theme-toggle-sun {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .dark .cyber-theme-toggle-sun {
+    opacity: 1;
+  }
+
+  .cyber-theme-toggle-sun-core {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f59e0b;
+    box-shadow: 0 0 10px #f59e0b;
+  }
+
+  .cyber-theme-toggle-sun-ray {
+    position: absolute;
+    width: 2px;
+    height: 6px;
+    background: #f59e0b;
+    border-radius: 1px;
+  }
+
+  .cyber-theme-toggle-sun-ray-1 { top: 2px; left: 50%; transform: translateX(-50%); }
+  .cyber-theme-toggle-sun-ray-2 { right: 2px; top: 50%; transform: translateY(-50%); }
+  .cyber-theme-toggle-sun-ray-3 { bottom: 2px; left: 50%; transform: translateX(-50%); }
+  .cyber-theme-toggle-sun-ray-4 { left: 2px; top: 50%; transform: translateY(-50%); }
+
+  /* Moon Icon */
+  .cyber-theme-toggle-moon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .dark .cyber-theme-toggle-moon {
+    opacity: 0;
+  }
+
+  .cyber-theme-toggle-moon-body {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #60a5fa;
+    box-shadow: 0 0 5px rgba(96, 165, 250, 0.5);
+  }
+
+  .cyber-theme-toggle-moon-crater {
+    position: absolute;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 50%;
+  }
+
+  .cyber-theme-toggle-moon-crater-1 {
+    width: 4px;
+    height: 4px;
+    top: 2px;
+    left: 4px;
+  }
+
+  .cyber-theme-toggle-moon-crater-2 {
+    width: 3px;
+    height: 3px;
+    bottom: 3px;
+    right: 3px;
+  }
+
+  .cyber-theme-toggle-moon-crater-3 {
+    width: 2px;
+    height: 2px;
+    bottom: 6px;
+    left: 5px;
+  }
+
+  /* Thumb Glow */
+  .cyber-theme-toggle-thumb-glow {
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+    opacity: 0;
+    filter: blur(4px);
+    transition: opacity 0.3s ease;
+  }
+
+  .cyber-theme-toggle:hover .cyber-theme-toggle-thumb-glow {
+    opacity: 0.5;
+    animation: thumbGlowPulse 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes thumbGlowPulse {
+    0% { opacity: 0.3; transform: scale(0.95); }
+    100% { opacity: 0.6; transform: scale(1.05); }
+  }
+
+  /* Futuristic Mobile Menu Button */
+  .mobile-menu-button {
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 9999;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+    border: 1px solid rgba(99, 102, 241, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+  }
+
+  /* Button glow effect */
+  .mobile-menu-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .mobile-menu-button:hover::before,
+  .mobile-menu-button.active::before {
+    opacity: 1;
+  }
+
+  /* Button grid overlay */
+  .mobile-menu-button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.2) 1px, transparent 1px);
+    background-size: 8px 8px;
+    opacity: 0.2;
+  }
+
+  .mobile-menu-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.6);
+  }
+
+  .mobile-menu-button.active {
+    background: rgba(30, 41, 59, 0.9);
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.7), inset 0 0 10px rgba(99, 102, 241, 0.3);
+    border-color: rgba(99, 102, 241, 0.8);
+  }
+
+  /* Hide on large screens */
+  @media (min-width: 1024px) {
+    .mobile-menu-button {
+      display: none !important;
+    }
+  }
+
+  /* Button Container */
+  .mobile-menu-button-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Button States */
+  .mobile-menu-button:hover {
+    background: rgba(30, 41, 59, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-menu-button.active {
+    background: rgba(30, 41, 59, 0.95);
+    border-color: rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+  }
+
+  /* Futuristic Hamburger Icon */
+  .mobile-menu-button-hamburger {
+    position: relative;
+    width: 22px;
+    height: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 50;
+    z-index: 2;
   }
-  
-  .hamburger span {
+
+  .mobile-menu-button-line {
     display: block;
     height: 2px;
     width: 100%;
-    background-color: var(--color-text);
-    transition: all 0.3s ease;
+    background: white;
+    border-radius: 2px;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                width 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
   }
-  
-  .hamburger.active span:nth-child(1) {
-    transform: translateY(11px) rotate(45deg);
+
+  /* Different line lengths for futuristic look */
+  .mobile-menu-button-line-1 {
+    width: 70%;
+    align-self: flex-end;
   }
-  
-  .hamburger.active span:nth-child(2) {
+
+  .mobile-menu-button-line-3 {
+    width: 70%;
+    align-self: flex-start;
+  }
+
+  /* Hover effects */
+  .mobile-menu-button:hover .mobile-menu-button-line {
+    box-shadow: 0 0 12px rgba(99, 102, 241, 0.8);
+  }
+
+  .mobile-menu-button:hover .mobile-menu-button-line-1,
+  .mobile-menu-button:hover .mobile-menu-button-line-3 {
+    width: 100%;
+  }
+
+  /* Futuristic X shape for close button */
+  .mobile-menu-button.active .mobile-menu-button-line {
+    background: rgba(99, 102, 241, 1);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.8);
+  }
+
+  .mobile-menu-button.active .mobile-menu-button-line-1 {
+    transform: translateY(8px) rotate(45deg);
+    width: 100%;
+    align-self: center;
+  }
+
+  .mobile-menu-button.active .mobile-menu-button-line-2 {
     opacity: 0;
+    transform: translateX(-10px);
   }
-  
-  .hamburger.active span:nth-child(3) {
-    transform: translateY(-11px) rotate(-45deg);
+
+  .mobile-menu-button.active .mobile-menu-button-line-3 {
+    transform: translateY(-8px) rotate(-45deg);
+    width: 100%;
+    align-self: center;
   }
-  
-  /* Mobile navigation links */
-  .mobile-nav-link {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    transition: color 0.3s ease;
+
+  /* Energy Effect - Enhanced and Fixed */
+  .cyber-mobile-button-energy {
+    position: absolute;
+    inset: -8px;
+    background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+    opacity: 0.3; /* Default visible state */
+    filter: blur(8px);
+    transition: opacity 0.3s ease;
+    will-change: opacity, transform;
+    pointer-events: none;
+    z-index: 1;
   }
-  
-  .mobile-nav-link::after {
+
+  .cyber-mobile-button:hover .cyber-mobile-button-energy {
+    opacity: 0.5;
+    animation: buttonEnergyPulse 2s ease-in-out infinite alternate;
+  }
+
+  /* Always visible energy effect when active */
+  .cyber-mobile-button.active .cyber-mobile-button-energy {
+    opacity: 0.7;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.8) 0%, transparent 70%);
+    animation: buttonEnergyPulseActive 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes buttonEnergyPulse {
+    0% { opacity: 0.4; transform: scale(0.95); }
+    100% { opacity: 0.7; transform: scale(1.1); }
+  }
+
+  @keyframes buttonEnergyPulseActive {
+    0% { opacity: 0.6; transform: scale(1); filter: blur(8px); }
+    100% { opacity: 0.9; transform: scale(1.2); filter: blur(12px); }
+  }
+
+  /* Electric Spark Effect - Enhanced for visibility */
+  .cyber-mobile-button::before,
+  .cyber-mobile-button::after {
     content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+  }
+
+  .cyber-mobile-button::before {
+    top: 20%;
+    left: 15%;
+  }
+
+  .cyber-mobile-button::after {
+    bottom: 20%;
+    right: 15%;
+  }
+
+  /* Always show sparks when active */
+  .cyber-mobile-button.active::before,
+  .cyber-mobile-button.active::after {
+    animation: electricSparkActive 1s linear infinite;
+    background: rgba(236, 72, 153, 1);
+  }
+
+  @keyframes electricSparkActive {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(4); box-shadow: 0 0 15px rgba(236, 72, 153, 1); }
+  }
+
+  /* Additional sparks for active state */
+  .cyber-mobile-button.active::before {
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.9), 0 0 20px rgba(236, 72, 153, 0.5);
+  }
+
+  .cyber-mobile-button.active::after {
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.9), 0 0 20px rgba(236, 72, 153, 0.5);
+  }
+
+  /* Cyberpunk Mobile Menu - Enhanced for performance and visual appeal */
+  .cyber-mobile-menu-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    transform: translateZ(0); /* Force GPU acceleration */
+    will-change: transform;
+    overflow: hidden;
+  }
+
+  /* Dark Backdrop with improved blur - Fixed for mobile */
+  .cyber-mobile-menu-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 20, 0.98); /* Increased opacity */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    will-change: opacity;
+    z-index: 1; /* Ensure proper stacking */
+  }
+
+  /* Animated Grid with optimized performance */
+  .cyber-mobile-menu-grid {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0.2;
+    transform: translateZ(0); /* Force GPU acceleration */
+  }
+
+  .cyber-mobile-menu-grid-h {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 39px,
+      rgba(99, 102, 241, 0.6) 39px,
+      rgba(99, 102, 241, 0.6) 40px
+    );
+    animation: mobileGridMoveVertical 60s linear infinite;
+    will-change: transform;
+  }
+
+  .cyber-mobile-menu-grid-v {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 39px,
+      rgba(236, 72, 153, 0.6) 39px,
+      rgba(236, 72, 153, 0.6) 40px
+    );
+    animation: mobileGridMoveHorizontal 60s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes mobileGridMoveVertical {
+    from { transform: translateY(0); }
+    to { transform: translateY(40px); }
+  }
+
+  @keyframes mobileGridMoveHorizontal {
+    from { transform: translateX(0); }
+    to { transform: translateX(40px); }
+  }
+
+  /* Animated Particles with improved performance */
+  .cyber-mobile-menu-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transform: translateZ(0); /* Force GPU acceleration */
+    will-change: transform;
+  }
+
+  /* Enhanced Glowing Borders */
+  .cyber-mobile-menu-glow-top,
+  .cyber-mobile-menu-glow-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(99, 102, 241, 0.8),
+      rgba(236, 72, 153, 0.8),
+      rgba(139, 92, 246, 0.8),
+      transparent);
+    filter: blur(2px);
+    animation: mobileBorderPulse 4s ease-in-out infinite alternate;
+    will-change: opacity, filter;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  }
+
+  .cyber-mobile-menu-glow-top {
+    top: 0;
+  }
+
+  .cyber-mobile-menu-glow-bottom {
+    bottom: 0;
+  }
+
+  @keyframes mobileBorderPulse {
+    0% { opacity: 0.5; filter: blur(2px); }
+    100% { opacity: 0.9; filter: blur(3px); }
+  }
+
+  /* Enhanced Circuit Pattern */
+  .cyber-mobile-menu-circuit {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,10 L30,10 L30,30 L50,30 L50,50 L70,50 L70,70 L90,70' stroke='rgba(99, 102, 241, 0.25)' fill='none' stroke-width='1.5'/%3E%3Cpath d='M90,10 L70,10 L70,30 L50,30 L50,50 L30,50 L30,70 L10,70' stroke='rgba(236, 72, 153, 0.25)' fill='none' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-size: 100px 100px;
+    opacity: 0.3;
+    animation: circuitPulse 8s ease-in-out infinite alternate;
+    will-change: opacity;
+  }
+
+  @keyframes circuitPulse {
+    0% { opacity: 0.2; }
+    100% { opacity: 0.4; }
+  }
+
+  /* Enhanced Noise Texture */
+  .cyber-mobile-menu-noise {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+  }
+
+  /* Holographic Scan Effect */
+  .cyber-mobile-menu-scan {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(99, 102, 241, 0.15) 45%,
+      rgba(236, 72, 153, 0.15) 55%,
+      transparent 100%);
+    animation: menuScanEffect 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  @keyframes menuScanEffect {
+    0% { left: -150%; }
+    100% { left: 100%; }
+  }
+
+  /* Enhanced Mobile Menu Logo with Holographic Effects */
+  .cyber-mobile-menu-logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 3rem;
+    transform: translateZ(0); /* Force GPU acceleration */
+    will-change: transform;
+    touch-action: none;
+  }
+
+  /* Holographic Rotating Rings */
+  .cyber-mobile-menu-logo-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1.5px solid rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+    will-change: transform;
+  }
+
+  .cyber-mobile-menu-logo-ring-1 {
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 1.5px solid rgba(99, 102, 241, 0.5);
+    animation: mobileRingRotate1 10s linear infinite;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.4), inset 0 0 10px rgba(99, 102, 241, 0.3);
+  }
+
+  .cyber-mobile-menu-logo-ring-2 {
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    border: 1.5px solid rgba(236, 72, 153, 0.5);
+    animation: mobileRingRotate2 15s linear infinite;
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.4), inset 0 0 10px rgba(236, 72, 153, 0.3);
+  }
+
+  @keyframes mobileRingRotate1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes mobileRingRotate2 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+  }
+
+  /* Enhanced Core Hexagon */
+  .cyber-mobile-menu-logo-hexagon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    animation: mobileHexagonPulse 3s ease-in-out infinite alternate;
+    will-change: transform, filter;
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.6);
+  }
+
+  @keyframes mobileHexagonPulse {
+    0% { transform: scale(0.95); filter: brightness(0.9) hue-rotate(0deg); }
+    100% { transform: scale(1.05); filter: brightness(1.2) hue-rotate(15deg); }
+  }
+
+  .cyber-mobile-menu-logo-hexagon-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: rgba(10, 10, 20, 0.9);
+    z-index: 1;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: var(--font-display);
+    color: white;
+    text-shadow: 0 0 15px var(--color-primary), 0 0 30px var(--color-secondary);
+    animation: textPulse 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes textPulse {
+    0% { text-shadow: 0 0 10px var(--color-primary), 0 0 20px var(--color-secondary); }
+    100% { text-shadow: 0 0 20px var(--color-primary), 0 0 40px var(--color-secondary); }
+  }
+
+  .cyber-mobile-menu-logo-hexagon-glow {
+    position: absolute;
+    inset: -10px;
+    background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+    opacity: 0.6;
+    filter: blur(15px);
+    animation: mobileGlowPulse 3s ease-in-out infinite alternate;
+    will-change: opacity, filter, transform;
+    mix-blend-mode: screen;
+  }
+
+  @keyframes mobileGlowPulse {
+    0% { opacity: 0.4; filter: blur(10px); transform: scale(0.95); }
+    100% { opacity: 0.7; filter: blur(20px); transform: scale(1.05); }
+  }
+
+  /* Enhanced Energy Beams */
+  .cyber-mobile-menu-logo-beams {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  .cyber-mobile-menu-logo-beam {
+    position: absolute;
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(to top, var(--color-primary), transparent);
+    transform-origin: bottom center;
+    opacity: 0.8;
+    filter: blur(1px);
+    will-change: opacity, height;
+  }
+
+  .cyber-mobile-menu-logo-beam-1 {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-30deg);
+    animation: mobileBeamFlicker1 4s ease-in-out infinite;
+    box-shadow: 0 0 10px var(--color-primary);
+  }
+
+  .cyber-mobile-menu-logo-beam-2 {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(30deg);
+    animation: mobileBeamFlicker2 5s ease-in-out infinite;
+    box-shadow: 0 0 10px var(--color-secondary);
+  }
+
+  .cyber-mobile-menu-logo-beam-3 {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    animation: mobileBeamFlicker3 6s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+  }
+
+  @keyframes mobileBeamFlicker1 {
+    0%, 100% { opacity: 0.5; height: 60px; }
+    50% { opacity: 0.9; height: 80px; }
+  }
+
+  @keyframes mobileBeamFlicker2 {
+    0%, 100% { opacity: 0.6; height: 70px; }
+    50% { opacity: 0.3; height: 50px; }
+  }
+
+  @keyframes mobileBeamFlicker3 {
+    0%, 100% { opacity: 0.3; height: 50px; }
+    50% { opacity: 0.8; height: 70px; }
+  }
+
+  /* Electric Arcs Effect */
+  .cyber-mobile-menu-logo::before,
+  .cyber-mobile-menu-logo::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0;
+    z-index: 3;
+    pointer-events: none;
+    filter: blur(1px);
+  }
+
+  .cyber-mobile-menu-logo::before {
+    top: 20%;
+    left: 15%;
+    animation: electricArc1 3s linear infinite;
+  }
+
+  .cyber-mobile-menu-logo::after {
+    bottom: 20%;
+    right: 15%;
+    animation: electricArc2 4s linear infinite;
+  }
+
+  @keyframes electricArc1 {
+    0%, 100% { opacity: 0; transform: scale(1); }
+    25%, 75% { opacity: 0; }
+    50% { opacity: 1; transform: scale(4); box-shadow: 0 0 15px var(--color-primary); }
+  }
+
+  @keyframes electricArc2 {
+    0%, 100% { opacity: 0; transform: scale(1); }
+    25%, 75% { opacity: 0; }
+    50% { opacity: 1; transform: scale(4); box-shadow: 0 0 15px var(--color-secondary); }
+  }
+
+  /* Enhanced Mobile Navigation with Futuristic Effects */
+  .cyber-mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 350px;
+    transform: translateZ(0); /* Force GPU acceleration */
+    will-change: transform;
+    position: relative;
+  }
+
+  /* Holographic Nav Container Effect */
+  .cyber-mobile-menu-nav::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+    border-radius: 20px;
+    opacity: 0.5;
+    z-index: -1;
+    animation: navContainerPulse 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes navContainerPulse {
+    0% { opacity: 0.3; transform: scale(0.98); }
+    100% { opacity: 0.6; transform: scale(1.02); }
+  }
+
+  /* Enhanced Mobile Navigation Link */
+  .cyber-mobile-menu-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+    width: 90%;
+    max-width: 320px;
+    border-radius: 8px;
+    background: rgba(10, 10, 20, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    touch-action: manipulation;
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+  }
+
+  .cyber-mobile-menu-link:active {
+    transform: scale(0.98);
+  }
+
+  .cyber-mobile-menu-link:hover,
+  .cyber-mobile-menu-link.active {
+    background: rgba(30, 41, 59, 0.5);
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Enhanced Section Number */
+  .cyber-mobile-menu-link-number {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    border-radius: 50%;
+    background: rgba(10, 10, 20, 0.6);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+    text-shadow: 0 0 5px var(--color-primary);
+    will-change: transform, box-shadow;
+  }
+
+  .cyber-mobile-menu-link-number-glow {
+    position: absolute;
+    inset: -2px;
+    background: radial-gradient(circle, var(--color-primary) 0%, transparent 70%);
+    opacity: 0.3;
+    filter: blur(5px);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    will-change: opacity, transform;
+  }
+
+  .cyber-mobile-menu-link:hover .cyber-mobile-menu-link-number-glow,
+  .cyber-mobile-menu-link.active .cyber-mobile-menu-link-number-glow {
+    opacity: 0.5;
+    animation: numberGlowPulse 2s ease-in-out infinite alternate;
+    box-shadow: 0 0 15px var(--color-primary);
+  }
+
+  @keyframes numberGlowPulse {
+    0% { opacity: 0.3; transform: scale(0.95); filter: blur(5px); }
+    100% { opacity: 0.6; transform: scale(1.1); filter: blur(8px); }
+  }
+
+  /* Enhanced Link Text */
+  .cyber-mobile-menu-link-text-container {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .cyber-mobile-menu-link-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-display);
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    display: block;
+    transform: translateZ(0);
+    will-change: transform, text-shadow;
+  }
+
+  .cyber-mobile-menu-link:hover .cyber-mobile-menu-link-text,
+  .cyber-mobile-menu-link.active .cyber-mobile-menu-link-text {
+    color: white;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.7), 0 0 20px rgba(236, 72, 153, 0.5);
+    transform: translateX(3px);
+  }
+
+  .cyber-mobile-menu-link-text-scan {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 100%);
+    transition: left 0.3s ease;
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  .cyber-mobile-menu-link:hover .cyber-mobile-menu-link-text-scan,
+  .cyber-mobile-menu-link.active .cyber-mobile-menu-link-text-scan {
+    animation: mobileScan 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes mobileScan {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  /* Enhanced Animated Line */
+  .cyber-mobile-menu-link-line {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
+    overflow: hidden;
+    transform: translateZ(0);
+  }
+
+  .cyber-mobile-menu-link-line-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
     transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s ease;
-  }
-  
-  .mobile-nav-link:hover::after,
-  .mobile-nav-link.active::after {
-    transform: scaleX(1);
     transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
   }
-  
-  .mobile-nav-link:hover,
-  .mobile-nav-link.active {
-    color: var(--color-primary);
+
+  .cyber-mobile-menu-link:hover .cyber-mobile-menu-link-line-fill,
+  .cyber-mobile-menu-link.active .cyber-mobile-menu-link-line-fill {
+    transform: scaleX(1);
+  }
+
+  .cyber-mobile-menu-link-line-glow {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--color-primary);
+    filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    will-change: opacity;
+  }
+
+  .cyber-mobile-menu-link:hover .cyber-mobile-menu-link-line-glow,
+  .cyber-mobile-menu-link.active .cyber-mobile-menu-link-line-glow {
+    opacity: 0.6;
+  }
+
+  /* Electric Dots Effect */
+  .cyber-mobile-menu-link::before,
+  .cyber-mobile-menu-link::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .cyber-mobile-menu-link::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .cyber-mobile-menu-link::after {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .cyber-mobile-menu-link:hover::before,
+  .cyber-mobile-menu-link:hover::after,
+  .cyber-mobile-menu-link.active::before,
+  .cyber-mobile-menu-link.active::after {
+    animation: electricDot 3s linear infinite;
+  }
+
+  @keyframes electricDot {
+    0%, 100% { opacity: 0; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(3); box-shadow: 0 0 8px var(--color-primary); }
+  }
+
+  /* Enhanced Mobile Social Section */
+  .cyber-mobile-menu-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Holographic Background Effect */
+  .cyber-mobile-menu-social::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -30px;
+    right: -30px;
+    bottom: -15px;
+    background: radial-gradient(ellipse at center, rgba(236, 72, 153, 0.1) 0%, transparent 70%);
+    border-radius: 20px;
+    opacity: 0.4;
+    z-index: -1;
+    animation: socialBgPulse 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes socialBgPulse {
+    0% { opacity: 0.2; transform: scale(0.98); }
+    100% { opacity: 0.5; transform: scale(1.02); }
+  }
+
+  /* Enhanced Social Title with Holographic Effect */
+  .cyber-mobile-menu-social-title {
+    position: relative;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background: rgba(10, 10, 20, 0.4);
+    border: 1px solid rgba(236, 72, 153, 0.3);
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transform: translateZ(0);
+    will-change: transform, box-shadow;
+  }
+
+  .cyber-mobile-menu-social-title-highlight {
+    color: var(--color-secondary);
+    margin-left: 0.5rem;
+    position: relative;
+    font-weight: 700;
+    text-shadow: 0 0 10px var(--color-secondary);
+    animation: titleHighlightPulse 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes titleHighlightPulse {
+    0% { text-shadow: 0 0 5px var(--color-secondary); }
+    100% { text-shadow: 0 0 15px var(--color-secondary), 0 0 30px rgba(236, 72, 153, 0.5); }
+  }
+
+  .cyber-mobile-menu-social-title-glow {
+    position: absolute;
+    inset: 0;
+    background: var(--color-secondary);
+    filter: blur(15px);
+    opacity: 0.2;
+    z-index: -1;
+    animation: titleGlowPulse 4s ease-in-out infinite alternate;
+    will-change: opacity, filter;
+  }
+
+  @keyframes titleGlowPulse {
+    0% { opacity: 0.1; filter: blur(10px); }
+    100% { opacity: 0.3; filter: blur(20px); }
+  }
+
+  /* Enhanced Social Icons with Holographic Effects */
+  .cyber-mobile-menu-social-icons {
+    display: flex;
+    gap: 2.5rem;
+    position: relative;
+  }
+
+  /* Connecting Lines Between Icons */
+  .cyber-mobile-menu-social-icons::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    right: 25px;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent,
+      rgba(236, 72, 153, 0.5),
+      transparent);
+    transform: translateY(-50%);
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .cyber-mobile-menu-social-icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 1;
+    transform: translateZ(0);
+    will-change: transform, color;
+    touch-action: manipulation;
+  }
+
+  .cyber-mobile-menu-social-icon-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(10, 10, 20, 0.6);
+    border: 1.5px solid rgba(236, 72, 153, 0.4);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.2);
+    will-change: transform, border-color, box-shadow;
+  }
+
+  /* Grid Pattern Inside Icon */
+  .cyber-mobile-menu-social-icon-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(236, 72, 153, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(236, 72, 153, 0.1) 1px, transparent 1px);
+    background-size: 5px 5px;
+    opacity: 0.3;
+  }
+
+  .cyber-mobile-menu-social-icon-glow {
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-secondary) 0%, transparent 70%);
+    opacity: 0;
+    filter: blur(8px);
+    transition: all 0.3s ease;
+    will-change: opacity, transform;
+    mix-blend-mode: screen;
+  }
+
+  .cyber-mobile-menu-social-icon:hover {
+    transform: translateY(-8px) scale(1.1);
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+
+  .cyber-mobile-menu-social-icon:hover .cyber-mobile-menu-social-icon-bg {
+    border-color: rgba(236, 72, 153, 0.8);
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.4);
+  }
+
+  .cyber-mobile-menu-social-icon:hover .cyber-mobile-menu-social-icon-glow {
+    opacity: 0.6;
+    animation: mobileSocialGlow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes mobileSocialGlow {
+    0% { opacity: 0.4; transform: scale(0.95); filter: blur(8px); }
+    100% { opacity: 0.8; transform: scale(1.15); filter: blur(12px); }
+  }
+
+  /* Pulsing Ring Effect */
+  .cyber-mobile-menu-social-icon::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    border: 2px solid rgba(236, 72, 153, 0.5);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
+
+  .cyber-mobile-menu-social-icon:hover::after {
+    animation: socialRingPulse 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes socialRingPulse {
+    0% { opacity: 0.8; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.5); }
+  }
+
+  /* Cyberpunk Scroll Effects */
+  header.scrolled .header-bg-gradient {
+    background: linear-gradient(125deg,
+      rgba(10, 10, 20, 0.95) 0%,
+      rgba(20, 20, 40, 0.95) 40%,
+      rgba(10, 10, 20, 0.95) 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+  }
+
+  header.scrolled .header-border-glow {
+    opacity: 0.8;
+    filter: blur(2px);
+  }
+
+  /* Advanced Entrance Animations */
+  @keyframes cyberFadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+      filter: blur(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes cyberFadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+      filter: blur(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes cyberFadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+      filter: blur(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes cyberGlitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+  }
+
+  /* Apply animations to elements */
+  .cyber-logo {
+    animation: cyberFadeInRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+
+  .cyber-nav-link {
+    animation: cyberFadeInDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+
+  .cyber-nav-link:nth-child(1) { animation-delay: 0.1s; }
+  .cyber-nav-link:nth-child(2) { animation-delay: 0.15s; }
+  .cyber-nav-link:nth-child(3) { animation-delay: 0.2s; }
+  .cyber-nav-link:nth-child(4) { animation-delay: 0.25s; }
+  .cyber-nav-link:nth-child(5) { animation-delay: 0.3s; }
+  .cyber-nav-link:nth-child(6) { animation-delay: 0.35s; }
+
+  .cyber-social-icon {
+    animation: cyberFadeInDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+
+  .cyber-social-icon:nth-child(1) { animation-delay: 0.4s; }
+  .cyber-social-icon:nth-child(2) { animation-delay: 0.45s; }
+  .cyber-social-icon:nth-child(3) { animation-delay: 0.5s; }
+
+  .cyber-theme-toggle {
+    animation: cyberFadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.55s;
+    opacity: 0;
+  }
+
+  .cyber-mobile-button {
+    animation: cyberFadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+
+  /* Glitch effect on hover */
+  .cyber-logo:hover .cyber-logo-letter,
+  .cyber-nav-link:hover .cyber-nav-icon,
+  .cyber-social-icon:hover i {
+    animation: cyberGlitch 0.5s ease;
   }
 </style>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu toggle with animation
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenuButton.classList.toggle('active');
-      if (mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.remove('hidden');
-        mobileMenu.classList.add('flex');
-        document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
-      } else {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.remove('flex');
-        document.body.style.overflow = ''; // Re-enable scrolling
-      }
-    });
-    
-    // Active navigation link based on scroll position
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-    
-    function highlightNavLink() {
-      const scrollY = window.pageYOffset;
-      
-      sections.forEach(section => {
-        const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
-        const sectionId = section.getAttribute('id');
-        
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('data-section') === sectionId) {
-              link.classList.add('active');
-            }
-          });
+    // Create particles for various elements
+    createParticles();
+
+    // Initialize typing effect for title
+    initTypingEffect();
+
+    // Initialize active nav highlight
+    initActiveNavHighlight();
+
+    // Mobile menu toggle with advanced animations
+    initMobileMenu();
+
+    // Theme toggle with animations
+    initThemeToggle();
+
+    // Header scroll effects
+    initScrollEffects();
+
+    // Smooth scrolling for navigation links
+    initSmoothScrolling();
+
+    // Mouse follow effect for logo
+    initMouseFollowEffect();
+
+    // Create particles for various elements
+    function createParticles() {
+      // Logo particles
+      createElementParticles('cyber-logo-particles', 15, 20, 15);
+
+      // Mobile menu particles
+      createElementParticles('cyber-mobile-menu-particles', 30, 40, 30);
+
+      // Header particles
+      createElementParticles('header-particles', 50, 100, 50);
+    }
+
+    // Generic function to create particles for any element
+    function createElementParticles(elementId, count, maxDistance, maxSize) {
+      const container = document.getElementById(elementId);
+      if (!container) return;
+
+      for (let i = 0; i < count; i++) {
+        const particle = document.createElement('div');
+
+        // Random position
+        const x = Math.random() * 100;
+        const y = Math.random() * 100;
+
+        // Random size
+        const size = Math.random() * maxSize / 10 + 1;
+
+        // Random color
+        let color;
+        const colorRand = Math.random();
+        if (colorRand < 0.33) {
+          color = 'var(--color-primary)';
+        } else if (colorRand < 0.66) {
+          color = 'var(--color-secondary)';
+        } else {
+          color = 'var(--color-accent)';
         }
+
+        // Random opacity
+        const opacity = Math.random() * 0.5 + 0.1;
+
+        // Apply styles
+        particle.style.cssText = `
+          position: absolute;
+          width: ${size}px;
+          height: ${size}px;
+          background-color: ${color};
+          border-radius: 50%;
+          left: ${x}%;
+          top: ${y}%;
+          opacity: ${opacity};
+          filter: blur(${size / 2}px);
+          pointer-events: none;
+        `;
+
+        container.appendChild(particle);
+
+        // Animate with GSAP
+        gsap.to(particle, {
+          x: `+=${Math.random() * maxDistance - maxDistance/2}`,
+          y: `+=${Math.random() * maxDistance - maxDistance/2}`,
+          duration: 3 + Math.random() * 7,
+          repeat: -1,
+          yoyo: true,
+          ease: 'sine.inOut',
+          delay: Math.random() * 2
+        });
+
+        // Pulse opacity
+        gsap.to(particle, {
+          opacity: opacity / 2,
+          duration: 2 + Math.random() * 3,
+          repeat: -1,
+          yoyo: true,
+          ease: 'sine.inOut',
+          delay: Math.random() * 2
+        });
+      }
+    }
+
+    // Typing effect for the title
+    function initTypingEffect() {
+      const titleElement = document.getElementById('cyber-title');
+      if (!titleElement) return;
+
+      const titles = ['Web Developer', 'UI/UX Designer', 'Frontend Engineer', 'Creative Coder'];
+      let currentTitleIndex = 0;
+      let currentCharIndex = 0;
+      let isDeleting = false;
+      let typingSpeed = 100;
+
+      function typeTitle() {
+        const currentTitle = titles[currentTitleIndex];
+
+        if (isDeleting) {
+          // Deleting text
+          titleElement.textContent = currentTitle.substring(0, currentCharIndex - 1);
+          currentCharIndex--;
+          typingSpeed = 50;
+        } else {
+          // Typing text
+          titleElement.textContent = currentTitle.substring(0, currentCharIndex + 1);
+          currentCharIndex++;
+          typingSpeed = 100;
+        }
+
+        // Check if completed typing current title
+        if (!isDeleting && currentCharIndex === currentTitle.length) {
+          // Pause at the end of typing
+          isDeleting = true;
+          typingSpeed = 1500;
+        } else if (isDeleting && currentCharIndex === 0) {
+          // Move to next title
+          isDeleting = false;
+          currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+        }
+
+        setTimeout(typeTitle, typingSpeed);
+      }
+
+      // Start the typing effect
+      setTimeout(typeTitle, 1000);
+    }
+
+    // Initialize active nav highlight
+    function initActiveNavHighlight() {
+      const navLinks = document.querySelectorAll('.cyber-nav-link');
+      const highlight = document.getElementById('cyber-nav-highlight');
+
+      if (!highlight || navLinks.length === 0) return;
+
+      // Function to position the highlight
+      function positionHighlight(link) {
+        const linkRect = link.getBoundingClientRect();
+        const navRect = link.parentElement.getBoundingClientRect();
+
+        gsap.to(highlight, {
+          x: linkRect.left - navRect.left,
+          width: linkRect.width,
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      }
+
+      // Set initial position
+      const activeLink = document.querySelector('.cyber-nav-link.active') || navLinks[0];
+      positionHighlight(activeLink);
+
+      // Update on hover
+      navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          positionHighlight(link);
+        });
+      });
+
+      // Return to active link on mouse leave
+      document.querySelector('.cyber-nav-links').addEventListener('mouseleave', () => {
+        const activeLink = document.querySelector('.cyber-nav-link.active') || navLinks[0];
+        positionHighlight(activeLink);
       });
     }
-    
-    window.addEventListener('scroll', highlightNavLink);
-    highlightNavLink(); // Check on page load
-    
-    // Header scroll effect
-    const header = document.querySelector('header');
-    let lastScrollY = window.scrollY;
-    
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        header.classList.add('py-2', 'shadow-md');
-        header.classList.remove('py-4');
-        
-        // Hide header when scrolling down, show when scrolling up
-        if (window.scrollY > lastScrollY) {
-          header.style.transform = 'translateY(-100%)';
-        } else {
-          header.style.transform = 'translateY(0)';
-        }
-      } else {
-        header.classList.remove('py-2', 'shadow-md');
-        header.classList.add('py-4');
-        header.style.transform = 'translateY(0)';
+
+    // Simple Mobile Menu Initialization
+    function initMobileMenu() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (!mobileMenuButton || !mobileMenu) {
+        console.warn('Mobile menu elements not found');
+        return;
       }
-      
-      lastScrollY = window.scrollY;
-    });
-    
-    // Close mobile menu when clicking a link
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-    mobileNavLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.remove('flex');
+
+      // Pre-cache DOM elements for better performance
+      const mobileLinks = document.querySelectorAll('.mobile-menu-link');
+      const mobileLogo = document.querySelector('.mobile-menu-logo');
+      const mobileSocial = document.querySelector('.mobile-menu-social');
+
+      // Only show the button on appropriate screen sizes
+      function updateMobileButtonVisibility() {
+        if (window.innerWidth >= 1024) { // lg breakpoint (1024px)
+          mobileMenuButton.style.display = 'none';
+        } else {
+          mobileMenuButton.style.display = 'flex';
+        }
+      }
+
+      // Initial check
+      updateMobileButtonVisibility();
+
+      // Update on resize
+      window.addEventListener('resize', updateMobileButtonVisibility);
+
+      // Simple animation helper
+      function animateElement(element, properties, duration = 0.3) {
+        if (!element) return;
+
+        try {
+          gsap.to(element, {
+            ...properties,
+            duration: duration,
+            ease: 'power2.out'
+          });
+        } catch (error) {
+          console.error('Animation error:', error);
+          // Apply basic CSS fallback
+          if (properties.opacity !== undefined) element.style.opacity = properties.opacity;
+          if (properties.y !== undefined) element.style.transform = `translateY(${properties.y}px)`;
+        }
+      }
+
+      // Function to close the mobile menu
+      function closeMobileMenu() {
         mobileMenuButton.classList.remove('active');
-        document.body.style.overflow = '';
+        mobileMenu.classList.remove('menu-open');
+        mobileMenu.classList.add('menu-closing');
+
+        // Wait for animation to complete before hiding
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('flex', 'menu-closing');
+          document.body.style.overflow = ''; // Re-enable scrolling
+
+          // Clear particles
+          const particlesContainer = document.querySelector('.mobile-menu-particles');
+          if (particlesContainer) {
+            particlesContainer.innerHTML = '';
+          }
+        }, 500); // Match this with the CSS animation duration
+      }
+
+      // Toggle mobile menu on button click
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenuButton.classList.toggle('active');
+
+        if (mobileMenu.classList.contains('hidden')) {
+          // Open menu with CSS animations
+          mobileMenu.classList.remove('hidden');
+          mobileMenu.classList.add('flex', 'menu-open');
+
+          // Add static particles (no JavaScript animation)
+          const particlesContainer = document.querySelector('.mobile-menu-particles');
+          if (particlesContainer) {
+            particlesContainer.innerHTML = '';
+
+            // Create a few static particles with CSS animations
+            for (let i = 0; i < 10; i++) {
+              const particle = document.createElement('div');
+              particle.className = 'mobile-menu-particle';
+
+              // Random position
+              const x = Math.random() * 100;
+              const y = Math.random() * 100;
+
+              // Random animation delay
+              const delay = Math.random() * 5;
+
+              particle.style.cssText = `
+                left: ${x}%;
+                top: ${y}%;
+                animation-delay: ${delay}s;
+              `;
+
+              particlesContainer.appendChild(particle);
+            }
+          }
+
+          // Prevent scrolling
+          document.body.style.overflow = 'hidden';
+        } else {
+          closeMobileMenu();
+        }
       });
-    });
+
+      // Add click event listeners to all mobile menu links
+      function setupMobileMenuLinks() {
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+        mobileMenuLinks.forEach(link => {
+          // Remove any existing event listeners (to prevent duplicates)
+          const newLink = link.cloneNode(true);
+          link.parentNode.replaceChild(newLink, link);
+
+          newLink.addEventListener('click', (e) => {
+            // Get the target section ID
+            const targetId = newLink.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+              // Prevent default anchor behavior
+              e.preventDefault();
+
+              // Close the mobile menu
+              closeMobileMenu();
+
+              // Scroll to the section after a short delay to allow menu to close
+              setTimeout(() => {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+
+                // Update URL hash without scrolling
+                history.pushState(null, null, targetId);
+              }, 300);
+            }
+          });
+        });
+      }
+
+      // Setup mobile menu links
+      setupMobileMenuLinks();
+    }
+
+    // Theme toggle initialization
+    function initThemeToggle() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const htmlElement = document.documentElement;
+
+      if (!themeToggle) return;
+
+      // Check for saved theme preference or use system preference
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        htmlElement.classList.add('dark');
+      }
+
+      themeToggle.addEventListener('click', () => {
+        // Add glitch effect to the whole page during transition
+        const glitchOverlay = document.createElement('div');
+        glitchOverlay.className = 'fixed inset-0 z-[9999] pointer-events-none';
+        glitchOverlay.style.cssText = `
+          background: rgba(99, 102, 241, 0.05);
+          mix-blend-mode: overlay;
+          animation: fullGlitch 0.5s ease;
+        `;
+        document.body.appendChild(glitchOverlay);
+
+        // Toggle theme with animation
+        if (htmlElement.classList.contains('dark')) {
+          htmlElement.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        } else {
+          htmlElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+
+        // Remove glitch overlay after animation
+        setTimeout(() => {
+          document.body.removeChild(glitchOverlay);
+        }, 500);
+      });
+
+      // Add glitch animation to the stylesheet
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes fullGlitch {
+          0%, 100% { transform: translate(0); opacity: 0; }
+          20% { transform: translate(-5px, 5px); opacity: 0.5; }
+          40% { transform: translate(-5px, -5px); opacity: 0.5; }
+          60% { transform: translate(5px, 5px); opacity: 0.5; }
+          80% { transform: translate(5px, -5px); opacity: 0.5; }
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    // Header scroll effects
+    function initScrollEffects() {
+      const header = document.querySelector('header');
+      let lastScrollY = window.scrollY;
+
+      if (!header) return;
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+
+          // Hide header when scrolling down, show when scrolling up
+          if (window.scrollY > lastScrollY) {
+            gsap.to(header, { y: '-100%', duration: 0.4, ease: 'power3.out' });
+          } else {
+            gsap.to(header, { y: '0%', duration: 0.4, ease: 'power3.out' });
+          }
+        } else {
+          header.classList.remove('scrolled');
+          gsap.to(header, { y: '0%', duration: 0.4, ease: 'power3.out' });
+        }
+
+        lastScrollY = window.scrollY;
+
+        // Active section highlighting
+        highlightActiveSection();
+      });
+
+      // Highlight active section in navigation
+      function highlightActiveSection() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.cyber-nav-link, .cyber-mobile-menu-link');
+        const highlight = document.getElementById('cyber-nav-highlight');
+
+        let currentSection = '';
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.offsetHeight;
+
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('data-section') === currentSection) {
+            link.classList.add('active');
+
+            // Update highlight position for desktop nav
+            if (highlight && link.classList.contains('cyber-nav-link')) {
+              const linkRect = link.getBoundingClientRect();
+              const navRect = link.parentElement.getBoundingClientRect();
+
+              gsap.to(highlight, {
+                x: linkRect.left - navRect.left,
+                width: linkRect.width,
+                duration: 0.3,
+                ease: 'power2.out'
+              });
+            }
+          }
+        });
+      }
+
+      // Initialize active section highlighting
+      highlightActiveSection();
+    }
+
+    // Smooth scrolling for navigation links
+    function initSmoothScrolling() {
+      const navLinks = document.querySelectorAll('.cyber-nav-link, .cyber-mobile-menu-link');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const targetId = link.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            // Close mobile menu if open
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+              mobileMenuButton.click();
+            }
+
+            // Add click effect
+            const clickEffect = document.createElement('div');
+            clickEffect.className = 'cyber-click-effect';
+            clickEffect.style.cssText = `
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 5px;
+              height: 5px;
+              background: var(--color-primary);
+              border-radius: 50%;
+              z-index: 10;
+              pointer-events: none;
+            `;
+            link.appendChild(clickEffect);
+
+            gsap.to(clickEffect, {
+              width: 50,
+              height: 50,
+              opacity: 0,
+              duration: 0.5,
+              onComplete: () => {
+                link.removeChild(clickEffect);
+              }
+            });
+
+            // Scroll to target section
+            if (typeof lenis !== 'undefined') {
+              lenis.scrollTo(targetElement, {
+                offset: -80,
+                duration: 1.2,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+              });
+            } else {
+              window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+    }
+
+    // Mouse follow effect for logo
+    function initMouseFollowEffect() {
+      const logo = document.querySelector('.cyber-logo-hexagon');
+      const logoContainer = document.querySelector('.cyber-logo-container');
+
+      if (!logo || !logoContainer) return;
+
+      logoContainer.addEventListener('mousemove', (e) => {
+        const rect = logoContainer.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const moveX = (x - centerX) / 10;
+        const moveY = (y - centerY) / 10;
+
+        gsap.to(logo, {
+          x: moveX,
+          y: moveY,
+          duration: 0.3,
+          ease: 'power2.out'
+        });
+      });
+
+      logoContainer.addEventListener('mouseleave', () => {
+        gsap.to(logo, {
+          x: 0,
+          y: 0,
+          duration: 0.5,
+          ease: 'elastic.out(1, 0.5)'
+        });
+      });
+    }
   });
 </script>
+
+<style>
+  /* Advanced Futuristic Mobile Menu Styles */
+  #mobile-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Menu open state */
+  #mobile-menu.menu-open {
+    opacity: 1;
+    display: flex !important;
+    animation: menuOpenAnimation 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  /* Menu closing state */
+  #mobile-menu.menu-closing {
+    opacity: 0;
+    animation: menuCloseAnimation 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes menuOpenAnimation {
+    0% { opacity: 0; transform: translateX(-15px); filter: blur(5px); }
+    20% { transform: translateX(8px); }
+    40% { transform: translateX(-5px); }
+    60% { transform: translateX(3px); }
+    80% { transform: translateX(-2px); }
+    100% { opacity: 1; transform: translateX(0); filter: blur(0); }
+  }
+
+  @keyframes menuCloseAnimation {
+    0% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0; transform: translateX(-10px); }
+  }
+
+  /* Hide on large screens */
+  @media (min-width: 1024px) {
+    #mobile-menu {
+      display: none !important;
+    }
+  }
+
+  /* Futuristic menu background with animated elements */
+  #mobile-menu::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.95) 100%);
+    z-index: -2;
+  }
+
+  /* Futuristic backdrop with animated elements */
+  .mobile-menu-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  /* Animated grid overlay */
+  .mobile-menu-backdrop::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    z-index: 0;
+    animation: gridPulse 8s linear infinite;
+  }
+
+  @keyframes gridPulse {
+    0% { opacity: 0.2; background-size: 20px 20px; }
+    50% { opacity: 0.4; background-size: 22px 22px; }
+    100% { opacity: 0.2; background-size: 20px 20px; }
+  }
+
+  /* Animated glow effect */
+  .mobile-menu-backdrop::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+    opacity: 0.5;
+    z-index: 0;
+    animation: glowMove 15s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowMove {
+    0% { transform: translate(-5%, -5%); }
+    100% { transform: translate(5%, 5%); }
+  }
+
+  /* Add glowing top border */
+  .mobile-menu-top-border {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(99, 102, 241, 0.5) 20%,
+      rgba(99, 102, 241, 0.8) 50%,
+      rgba(99, 102, 241, 0.5) 80%,
+      transparent 100%);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+    animation: borderPulse 3s ease-in-out infinite alternate;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  @keyframes borderPulse {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  /* Animated scan line effect */
+  .mobile-menu-scanline {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 150%;
+    height: 2px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(99, 102, 241, 0.2) 10%,
+      rgba(99, 102, 241, 0.8) 50%,
+      rgba(99, 102, 241, 0.2) 90%,
+      transparent 100%);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    z-index: 1;
+    animation: scanline 8s linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes scanline {
+    0% { top: -5%; }
+    100% { top: 105%; }
+  }
+
+  /* Animated particles */
+  .mobile-menu-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  /* Individual particle with CSS animation */
+  .mobile-menu-particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(99, 102, 241, 0.7);
+    border-radius: 50%;
+    opacity: 0;
+    filter: blur(1px);
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.7);
+    animation: particleFade 3s ease-in-out infinite alternate,
+               particleFloat 8s ease-in-out infinite alternate;
+  }
+
+  /* Alternate colors for some particles */
+  .mobile-menu-particle:nth-child(3n) {
+    background: rgba(236, 72, 153, 0.7);
+    box-shadow: 0 0 8px rgba(236, 72, 153, 0.7);
+  }
+
+  .mobile-menu-particle:nth-child(5n) {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+
+  /* Particle animations */
+  @keyframes particleFade {
+    0% { opacity: 0.1; }
+    100% { opacity: 0.7; }
+  }
+
+  @keyframes particleFloat {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, 10px); }
+    50% { transform: translate(-5px, 20px); }
+    75% { transform: translate(-15px, 10px); }
+    100% { transform: translate(5px, -10px); }
+  }
+
+  /* Advanced Futuristic logo */
+  .mobile-menu-logo-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+    animation: logoAppear 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+    filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.3));
+  }
+
+  @keyframes logoAppear {
+    0% { opacity: 0; transform: translateY(20px) scale(0.9); filter: blur(5px); }
+    70% { transform: translateY(-5px) scale(1.05); }
+    100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+  }
+
+  /* Outer ring */
+  .mobile-menu-logo-container::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    box-shadow: inset 0 0 15px rgba(99, 102, 241, 0.2);
+    animation: ringPulse 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes ringPulse {
+    0% { transform: scale(1); opacity: 0.5; }
+    100% { transform: scale(1.1); opacity: 0.8; }
+  }
+
+  .mobile-menu-logo-hexagon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 41, 59, 0.7);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border: 1px solid rgba(99, 102, 241, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    animation: rotateSlow 15s linear infinite;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+  }
+
+  @keyframes rotateSlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Inner hexagon */
+  .mobile-menu-logo-hexagon::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    z-index: 1;
+  }
+
+  /* Circuit pattern */
+  .mobile-menu-logo-hexagon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,10 L30,10 L30,30 L50,30 L50,50 L70,50 L70,70 L90,70' stroke='%236366F1' stroke-width='1' fill='none'/%3E%3Cpath d='M90,90 L70,90 L70,70 L50,70 L50,50 L30,50 L30,30 L10,30' stroke='%236366F1' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+    background-size: 100px 100px;
+    opacity: 0.2;
+    z-index: 1;
+    animation: rotateSlow 20s linear infinite reverse;
+  }
+
+  .mobile-menu-logo-letter {
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    text-shadow: 0 0 15px rgba(99, 102, 241, 0.9);
+  }
+
+  .mobile-menu-logo-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.6) 0%, transparent 70%);
+    opacity: 0.7;
+    animation: pulseSlow 3s ease-in-out infinite alternate;
+    filter: blur(10px);
+  }
+
+  @keyframes pulseSlow {
+    0% { opacity: 0.5; transform: scale(0.95); }
+    100% { opacity: 0.8; transform: scale(1.05); }
+  }
+
+  /* Menu closing animation */
+  .menu-closing .mobile-menu-logo-container {
+    animation: logoDisappear 0.3s ease-in forwards;
+  }
+
+  @keyframes logoDisappear {
+    0% { opacity: 1; transform: translateY(0) scale(1); }
+    100% { opacity: 0; transform: translateY(-20px) scale(0.9); }
+  }
+
+  /* Futuristic Mobile Navigation */
+  .mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  /* Advanced Futuristic Mobile Navigation Link */
+  .mobile-menu-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 0.4rem 0;
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    transform: translateY(20px);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+    user-select: none; /* Prevent text selection */
+    touch-action: manipulation; /* Optimize for touch */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(99, 102, 241, 0.2);
+    border: none;
+  }
+
+  /* Glowing border effect */
+  .mobile-menu-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(99, 102, 241, 0.8), rgba(236, 72, 153, 0.8));
+    opacity: 0.5;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.8);
+    transition: all 0.4s ease;
+  }
+
+  /* Staggered animation for links */
+  .menu-open .mobile-menu-link:nth-child(1) { animation: linkAppear 0.4s ease-out 0.3s forwards; }
+  .menu-open .mobile-menu-link:nth-child(2) { animation: linkAppear 0.4s ease-out 0.38s forwards; }
+  .menu-open .mobile-menu-link:nth-child(3) { animation: linkAppear 0.4s ease-out 0.46s forwards; }
+  .menu-open .mobile-menu-link:nth-child(4) { animation: linkAppear 0.4s ease-out 0.54s forwards; }
+  .menu-open .mobile-menu-link:nth-child(5) { animation: linkAppear 0.4s ease-out 0.62s forwards; }
+  .menu-open .mobile-menu-link:nth-child(6) { animation: linkAppear 0.4s ease-out 0.7s forwards; }
+
+  @keyframes linkAppear {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Menu closing animation */
+  .menu-closing .mobile-menu-link {
+    animation: linkDisappear 0.3s ease-in forwards;
+  }
+
+  /* Staggered disappear animation */
+  .menu-closing .mobile-menu-link:nth-child(1) { animation-delay: 0s; }
+  .menu-closing .mobile-menu-link:nth-child(2) { animation-delay: 0.05s; }
+  .menu-closing .mobile-menu-link:nth-child(3) { animation-delay: 0.1s; }
+  .menu-closing .mobile-menu-link:nth-child(4) { animation-delay: 0.15s; }
+  .menu-closing .mobile-menu-link:nth-child(5) { animation-delay: 0.2s; }
+  .menu-closing .mobile-menu-link:nth-child(6) { animation-delay: 0.25s; }
+
+  @keyframes linkDisappear {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+  }
+
+  /* Link hover/active state */
+  .mobile-menu-link:hover,
+  .mobile-menu-link.active,
+  .mobile-menu-link:active {
+    background: rgba(15, 23, 42, 0.8);
+    transform: translateX(8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(99, 102, 241, 0.5);
+  }
+
+  /* Active tap state for mobile */
+  .mobile-menu-link:active {
+    transform: translateX(8px) scale(0.98);
+    transition: all 0.1s ease;
+  }
+
+  /* Hover and active state for glowing border */
+  .mobile-menu-link:hover::before,
+  .mobile-menu-link.active::before {
+    opacity: 1;
+    width: 6px;
+    box-shadow: 0 0 20px rgba(99, 102, 241, 1);
+  }
+
+  /* Futuristic gradient overlay */
+  .mobile-menu-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,
+      rgba(99, 102, 241, 0.15) 0%,
+      rgba(99, 102, 241, 0.05) 40%,
+      transparent 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+
+  .mobile-menu-link:hover::after,
+  .mobile-menu-link.active::after {
+    opacity: 1;
+  }
+
+  /* Cyberpunk circuit pattern */
+  .mobile-menu-link-circuit {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10,10 L30,10 L30,30 L50,30 L50,50 L70,50 L70,70 L90,70' stroke='%236366F1' stroke-width='1' fill='none'/%3E%3Cpath d='M90,90 L70,90 L70,70 L50,70 L50,50 L30,50 L30,30 L10,30' stroke='%236366F1' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+    background-size: 100px 100px;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
+  .mobile-menu-link:hover .mobile-menu-link-circuit,
+  .mobile-menu-link.active .mobile-menu-link-circuit {
+    opacity: 0.2;
+  }
+
+  /* Section Number - Futuristic Style */
+  .mobile-menu-link-number {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-right: 1.5rem;
+    min-width: 28px;
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    transition: all 0.4s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.7);
+    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+    box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.3);
+  }
+
+  /* Animated glow effect for number */
+  .mobile-menu-link-number::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .mobile-menu-link:hover .mobile-menu-link-number,
+  .mobile-menu-link.active .mobile-menu-link-number {
+    opacity: 1;
+    text-shadow: 0 0 15px rgba(99, 102, 241, 0.8);
+    color: white;
+    background: rgba(99, 102, 241, 0.8);
+  }
+
+  .mobile-menu-link:hover .mobile-menu-link-number::after,
+  .mobile-menu-link.active .mobile-menu-link-number::after {
+    opacity: 1;
+  }
+
+  /* Link Text - Enhanced */
+  .mobile-menu-link-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s ease;
+    position: relative;
+    letter-spacing: 0.5px;
+  }
+
+  /* Text glow effect */
+  .mobile-menu-link-text::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(99, 102, 241, 1), rgba(236, 72, 153, 0.5));
+    transition: width 0.4s ease;
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  }
+
+  .mobile-menu-link:hover .mobile-menu-link-text,
+  .mobile-menu-link.active .mobile-menu-link-text {
+    transform: translateX(5px);
+    color: white;
+  }
+
+  .mobile-menu-link:hover .mobile-menu-link-text::after,
+  .mobile-menu-link.active .mobile-menu-link-text::after {
+    width: 100%;
+  }
+
+  /* Futuristic Social Section */
+  .mobile-menu-social {
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: socialAppear 0.5s ease-out 0.7s forwards;
+  }
+
+  @keyframes socialAppear {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Menu closing animation */
+  .menu-closing .mobile-menu-social {
+    animation: socialDisappear 0.3s ease-in forwards;
+  }
+
+  @keyframes socialDisappear {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+  }
+
+  .mobile-menu-social::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg,
+      transparent 0%,
+      rgba(99, 102, 241, 0.3) 30%,
+      rgba(99, 102, 241, 0.5) 50%,
+      rgba(99, 102, 241, 0.3) 70%,
+      transparent 100%);
+  }
+
+  .mobile-menu-social-title {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mobile-menu-social-highlight {
+    color: var(--color-primary);
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+  }
+
+  .mobile-menu-social-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--color-primary);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.8);
+    animation: glowPulse 2s infinite alternate;
+  }
+
+  @keyframes glowPulse {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+
+  /* Futuristic Social Icons */
+  .mobile-menu-social-icons {
+    position: relative;
+  }
+
+  .mobile-menu-social-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 41, 59, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    animation: iconPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+
+  /* Staggered animation for icons */
+  .menu-open .mobile-menu-social-icon:nth-child(1) { animation-delay: 0.8s; }
+  .menu-open .mobile-menu-social-icon:nth-child(2) { animation-delay: 0.9s; }
+  .menu-open .mobile-menu-social-icon:nth-child(3) { animation-delay: 1s; }
+
+  @keyframes iconPop {
+    0% { opacity: 0; transform: scale(0.5); }
+    70% { transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  /* Icon glow effect */
+  .mobile-menu-social-icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .mobile-menu-social-icon:hover::before {
+    opacity: 1;
+  }
+
+  /* Icon grid overlay */
+  .mobile-menu-social-icon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(99, 102, 241, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(99, 102, 241, 0.2) 1px, transparent 1px);
+    background-size: 8px 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .mobile-menu-social-icon:hover::after {
+    opacity: 0.3;
+  }
+
+  .mobile-menu-social-icon:hover {
+    color: white;
+    background: rgba(30, 41, 59, 0.7);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(99, 102, 241, 0.4);
+    border-color: rgba(99, 102, 241, 0.6);
+  }
+
+  /* Menu closing animation for icons */
+  .menu-closing .mobile-menu-social-icon {
+    animation: iconShrink 0.3s ease-in forwards;
+  }
+
+  @keyframes iconShrink {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.8); }
+  }
+</style>

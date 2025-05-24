@@ -253,11 +253,9 @@ function initNewsletterForm() {
   newsletterForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Get email input
     const emailInput = newsletterForm.querySelector('.footer-newsletter-input');
     if (!emailInput || !emailInput.value) return;
 
-    // Show loading state
     const button = newsletterForm.querySelector('.footer-newsletter-button');
     const buttonText = button.querySelector('.footer-newsletter-button-text');
     const originalText = buttonText.innerHTML;
@@ -268,42 +266,42 @@ function initNewsletterForm() {
       <i class="fas fa-circle-notch fa-spin"></i>
     `;
 
-    // Simulate form submission (replace with actual AJAX call)
-    setTimeout(() => {
+    // 💌 EmailJS magic
+    emailjs.send('service_s27ig5p', 'template_m2eo4ub', {
+      email: emailInput.value
+    }, 'zRyGTf-d7dLLQxjME')
+    .then(() => {
       // Reset button
       button.disabled = false;
       buttonText.innerHTML = originalText;
 
-      // Show success message
+      // Show success
       const successMessage = document.createElement('div');
       successMessage.className = 'mt-4 text-green-400 text-sm flex items-center';
       successMessage.innerHTML = `
         <i class="fas fa-check-circle mr-2"></i>
         <span>Thank you for subscribing to our newsletter!</span>
       `;
-
-      // Add success message to form
       newsletterForm.appendChild(successMessage);
 
-      // Reset form
       emailInput.value = '';
-
-      // Play success sound
       playSuccessSound();
 
-      // Remove success message after 5 seconds
       setTimeout(() => {
         successMessage.style.opacity = '0';
         successMessage.style.transform = 'translateY(-10px)';
         successMessage.style.transition = 'all 0.3s ease';
-
-        setTimeout(() => {
-          successMessage.remove();
-        }, 300);
+        setTimeout(() => successMessage.remove(), 300);
       }, 5000);
-    }, 1500);
+    })
+    .catch((error) => {
+      button.disabled = false;
+      buttonText.innerHTML = originalText;
+      alert('Oops baby 😢 Something went wrong.\n' + error.text);
+    });
   });
 }
+
 
 // Play subtle hover sound
 function playHoverSound(minFreq = 200, maxFreq = 400) {

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initRevealAnimations();
 
   // Initialize newsletter form
-  initNewsletterForm();
+  // initNewsletterForm();
 
   // Force activate all reveal elements after a short delay
   setTimeout(() => {
@@ -245,62 +245,7 @@ function initRevealAnimations() {
 }
 
 // Initialize newsletter form
-function initNewsletterForm() {
-  const newsletterForm = document.querySelector('.footer-newsletter-form');
 
-  if (!newsletterForm) return;
-
-  newsletterForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const emailInput = newsletterForm.querySelector('.footer-newsletter-input');
-    if (!emailInput || !emailInput.value) return;
-
-    const button = newsletterForm.querySelector('.footer-newsletter-button');
-    const buttonText = button.querySelector('.footer-newsletter-button-text');
-    const originalText = buttonText.innerHTML;
-
-    button.disabled = true;
-    buttonText.innerHTML = `
-      <span>Subscribing...</span>
-      <i class="fas fa-circle-notch fa-spin"></i>
-    `;
-
-    // 💌 EmailJS magic
-    emailjs.send('service_s27ig5p', 'template_m2eo4ub', {
-      email: emailInput.value
-    }, 'zRyGTf-d7dLLQxjME')
-    .then(() => {
-      // Reset button
-      button.disabled = false;
-      buttonText.innerHTML = originalText;
-
-      // Show success
-      const successMessage = document.createElement('div');
-      successMessage.className = 'mt-4 text-green-400 text-sm flex items-center';
-      successMessage.innerHTML = `
-        <i class="fas fa-check-circle mr-2"></i>
-        <span>Thank you for subscribing to our newsletter!</span>
-      `;
-      newsletterForm.appendChild(successMessage);
-
-      emailInput.value = '';
-      playSuccessSound();
-
-      setTimeout(() => {
-        successMessage.style.opacity = '0';
-        successMessage.style.transform = 'translateY(-10px)';
-        successMessage.style.transition = 'all 0.3s ease';
-        setTimeout(() => successMessage.remove(), 300);
-      }, 5000);
-    })
-    .catch((error) => {
-      button.disabled = false;
-      buttonText.innerHTML = originalText;
-      alert('Oops baby 😢 Something went wrong.\n' + error.text);
-    });
-  });
-}
 
 
 // Play subtle hover sound

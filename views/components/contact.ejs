@@ -347,7 +347,7 @@ contactForm.addEventListener('submit', async (e) => {
 
   try {
     // Send form via EmailJS
-    await emailjs.sendForm('service_s27ig5p', 'template_7doxiec', contactForm);
+    await emailjs.sendForm('<%= cridentials.SERVICE_ID %>', '<%= cridentials.CONTACT_FORM_TEMPLATE_ID %>', contactForm);
 
     // Show success message
     successMessage.classList.remove('hidden');

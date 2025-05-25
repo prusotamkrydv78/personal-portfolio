@@ -1,7 +1,10 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const connectDB = require('./database/dbConnection');
+const LinksRouter = require('./Routes/Links.routes');
 require('dotenv').config();
+connectDB()
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -29,18 +32,9 @@ app.get('/', (req, res) => {
   });
 });
 
-// Handle form submission via AJAX
-app.post('/contact', (req, res) => {
-  const { name, email, message } = req.body;
-  console.log('Contact form submission:', { name, email, message });
-
-  // Send a JSON response for AJAX handling
-  res.json({
-    success: true,
-    message: 'Your message has been sent successfully!'
-  });
-});
-
+//Externals route
+app.use("/",LinksRouter)
+ 
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

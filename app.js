@@ -3,6 +3,10 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const connectDB = require('./database/dbConnection');
 const LinksRouter = require('./Routes/Links.routes');
+const AboutsModel = require('./Models/Abouts.model');
+const SkillsModel = require('./Models/Skills.model');
+const ProjectsRouter = require('./Routes/Projects.routes');
+const AboutsRouter = require('./Routes/Abouts.routes');
 require('dotenv').config();
 connectDB()
 
@@ -34,6 +38,9 @@ app.get('/', (req, res) => {
 
 //Externals route
 app.use("/",LinksRouter)
+app.use("/",SkillsModel)
+app.use("/",ProjectsRouter)
+app.use("/",AboutsRouter)
  
 // Start the server
 app.listen(PORT, () => {

@@ -7,6 +7,7 @@ const AboutsModel = require('./Models/Abouts.model');
 const SkillsModel = require('./Models/Skills.model');
 const ProjectsRouter = require('./Routes/Projects.routes');
 const AboutsRouter = require('./Routes/Abouts.routes');
+const AdminData = require('./AdminData');
 require('dotenv').config();
 connectDB()
 
@@ -26,22 +27,31 @@ const privateCridentials = {
   CONTACT_FORM_TEMPLATE_ID: process.env.CONTACT_FORM_TEMPLATE_ID,
   SUBSCRIBE_FORM_TEMPLATE_ID: process.env.SUBSCRIBE_FORM_TEMPLATE_ID,
   PUBLIC_KEY: process.env.PUBLIC_KEY,
-} 
+}
 // Single route for the entire portfolio
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+  const adminData = await AdminData()
   res.render('index', {
     title: 'Prusotam - Creative Web Developer',
     page: 'home',
-    cridentials: {...privateCridentials}
+    cridentials: { ...privateCridentials },
+    adminData
   });
 });
+app.get("/test", async (req, res) => {
+  const adminData = await AdminData()
+  res.json({
+    message: "success",
+    data: adminData
+  })
 
+})
 //Externals route
-app.use("/",LinksRouter)
-app.use("/",SkillsModel)
-app.use("/",ProjectsRouter)
-app.use("/",AboutsRouter)
- 
+app.use("/", LinksRouter)
+app.use("/", SkillsModel)
+app.use("/", ProjectsRouter)
+app.use("/", AboutsRouter)
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
